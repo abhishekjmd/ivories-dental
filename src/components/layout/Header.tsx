@@ -101,15 +101,26 @@ export default function Header() {
             <li>
               <Link
                 className="transition-colors hover:text-[#24B9D7]"
+                href="/gallery"
+              >
+                Smile Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-[#24B9D7]"
                 href="/testimonials"
               >
                 Testimonials
               </Link>
             </li>
             <li>
-              <a className="transition-colors hover:text-[#24B9D7]" href="#">
+              <Link
+                className="transition-colors hover:text-[#24B9D7]"
+                href="/contact"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

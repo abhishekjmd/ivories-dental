@@ -3,10 +3,10 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Real Stories - Ivories Dental Clinic</title>
+<title>Contact Us | Ivories Dental Clinic Ahmedabad</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -14,19 +14,21 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#200b3c",
-                        "accent-teal": "#24B9D7",
-                        "accent-gold": "#F7BB00",
-                        "background-light": "#f7f6f8",
-                        "background-dark": "#181220",
+                        "primary": "#0B1F3A", // Deep Navy
+                        "teal-brand": "#24B9D7",
+                        "gold-accent": "#D4AF37",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0B1F3A",
                     },
                     fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
                     },
                     borderRadius: {
                         "DEFAULT": "0.25rem",
                         "lg": "0.5rem",
                         "xl": "0.75rem",
+                        "2xl": "1rem",
                         "full": "9999px"
                     },
                 },
@@ -34,352 +36,278 @@
         }
     </script>
 <style>
-        body { font-family: 'Manrope', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-mesh {
+            background-color: #ffffff;
+            background-image: radial-gradient(at 0% 0%, rgba(36, 185, 215, 0.05) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(11, 31, 58, 0.05) 0px, transparent 50%);
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<!-- Header -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-20 bg-white dark:bg-background-dark sticky top-0 z-50">
-<div class="flex items-center gap-8">
-<div class="flex items-center gap-3 text-primary dark:text-accent-teal">
-<div class="size-8">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
-</svg>
+<body class="font-display bg-white text-primary antialiased">
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/90 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-teal-brand">
+<span class="material-symbols-outlined text-3xl">dentistry</span>
 </div>
-<h2 class="text-primary dark:text-white text-xl font-extrabold leading-tight tracking-tight">Ivories Dental Clinic</h2>
+<h1 class="text-xl font-extrabold tracking-tight text-primary">IVORIES <span class="text-teal-brand">DENTAL</span></h1>
 </div>
-<nav class="hidden md:flex items-center gap-6">
-<a class="text-primary dark:text-white/80 text-sm font-semibold hover:text-accent-teal transition-colors" href="#">Home</a>
-<a class="text-primary dark:text-white/80 text-sm font-semibold hover:text-accent-teal transition-colors" href="#">Treatments</a>
-<a class="text-primary dark:text-white/80 text-sm font-semibold hover:text-accent-teal transition-colors" href="#">Doctors</a>
-<a class="text-accent-teal text-sm font-bold border-b-2 border-accent-teal pb-1" href="#">Real Stories</a>
-<a class="text-primary dark:text-white/80 text-sm font-semibold hover:text-accent-teal transition-colors" href="#">Contact</a>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">About</a>
+<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Cases</a>
+<a class="text-sm font-semibold text-teal-brand" href="#">Contact</a>
 </nav>
-</div>
 <div class="flex items-center gap-4">
-<button class="hidden lg:flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all">
+<button class="hidden rounded-full border border-teal-brand px-5 py-2 text-sm font-bold text-teal-brand transition-all hover:bg-teal-brand hover:text-white lg:block">
+                    Patient Portal
+                </button>
+<button class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-teal-brand active:scale-95">
                     Book Appointment
                 </button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-accent-teal" data-alt="Professional dentist headshot in white coat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqbpOihJiFF1Bg8Xwnd0tjc0Bns9IuP6obPWM9zvgnxvTpwkO2Eq3IMaGBOh5_X-DfLkyeun2h5X5cp4-gbgLSAGobQI32LCfMrphQeq0pfzlLiRzOK0AHx_HAH4vKFKKp-3XdIddVq6T8rqaVOxQ6IaGGgD1dgnXZ7PQOZG0ed5BQoUgH1Aww84i6S1sX2xkxy8LqVsxlepHYGLny-6aqsFmkEd1hBYnxn3yQL4ukweRTes0hHJFDswQicWhojG5iMWEu20X_BQ");'></div>
+</div>
 </div>
 </header>
-<!-- Hero Section -->
-<section class="relative bg-primary py-20 lg:py-32 overflow-hidden">
-<div class="absolute inset-0 opacity-20 pointer-events-none">
-<div class="absolute top-0 right-0 w-96 h-96 bg-accent-teal rounded-full blur-[120px] -mr-48 -mt-48"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-teal rounded-full blur-[100px] -ml-32 -mb-32"></div>
-</div>
-<div class="container mx-auto px-6 lg:px-20 relative z-10 text-center">
-<h1 class="text-white text-4xl lg:text-6xl font-black leading-tight mb-6 max-w-4xl mx-auto">
-                    Real Stories. <span class="text-accent-teal">Real Smiles.</span>
-</h1>
-<p class="text-white/80 text-lg lg:text-xl font-normal leading-relaxed max-w-2xl mx-auto">
-                    See how we have transformed lives and restored confidence through painless, world-class dentistry.
+<main>
+<!-- Section 1: Hero Section -->
+<section class="bg-mesh relative overflow-hidden py-20 lg:py-32">
+<div class="mx-auto max-w-7xl px-6 text-center lg:px-10">
+<span class="mb-4 inline-block rounded-full bg-teal-brand/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-teal-brand">World-Class Care</span>
+<h2 class="font-serif text-5xl font-medium leading-tight text-primary lg:text-7xl">
+                    Get in Touch with <br/><span class="italic text-teal-brand">Our Experts</span>
+</h2>
+<p class="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:text-xl">
+                    Whether you have a question or are ready to schedule your consultation, we're here to help you achieve your perfect smile with precision and luxury care.
                 </p>
-<div class="mt-10 flex flex-wrap justify-center gap-4">
-<button class="bg-accent-teal text-primary px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform">View Our Results</button>
-<button class="bg-white/10 text-white backdrop-blur-md border border-white/20 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">Watch Patient Videos</button>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-teal-brand/5 blur-3xl"></div>
+<div class="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-primary/5 blur-3xl"></div>
+</section>
+<!-- Section 2: Contact Information Grid -->
+<section class="relative z-10 -mt-16 px-6 lg:px-10">
+<div class="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
+<!-- Address Card -->
+<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
+<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h3 class="mb-3 text-xl font-bold">Visit Our Clinic</h3>
+<p class="mb-6 flex-grow text-sm leading-relaxed text-slate-500">
+                        302, 303, 304 Maulik Arcade, Opposite Mansi Tower, Above Karnavati Pagarkha Bazaar, Vastrapur, Ahmedabad, Gujarat 380015
+                    </p>
+<a class="inline-flex items-center font-bold text-teal-brand hover:underline" href="#">
+                        Get Directions
+                        <span class="material-symbols-outlined ml-1 text-sm">arrow_outward</span>
+</a>
+</div>
+<!-- Phone Card -->
+<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
+<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<h3 class="mb-3 text-xl font-bold">Call or Message Us</h3>
+<div class="mb-6 space-y-2">
+<p class="text-sm font-medium text-slate-700">Phone: <span class="text-primary font-bold">+91 79 48000766</span></p>
+<p class="text-sm font-medium text-slate-700">WhatsApp: <span class="text-primary font-bold">+91 9879936039</span></p>
+</div>
+<a class="inline-flex items-center font-bold text-teal-brand hover:underline" href="tel:+917948000766">
+                        Call Now
+                        <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Email Card -->
+<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
+<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h3 class="mb-3 text-xl font-bold">Email Our Team</h3>
+<p class="mb-6 flex-grow text-sm leading-relaxed text-slate-500">
+                        For general inquiries, corporate tie-ups, or support, reach out via email and we'll respond within 24 hours.
+                    </p>
+<a class="inline-flex items-center font-bold text-teal-brand hover:underline truncate" href="mailto:ivoriesdentalclinic@gmail.com">
+                        ivoriesdentalclinic@gmail.com
+                    </a>
 </div>
 </div>
 </section>
-<!-- Filter Navigation -->
-<div class="bg-white dark:bg-background-dark/50 border-b border-primary/10 sticky top-[72px] z-40">
-<div class="container mx-auto px-6 lg:px-20">
-<div class="flex gap-4 lg:gap-8 overflow-x-auto no-scrollbar py-4">
-<button class="whitespace-nowrap px-4 py-2 rounded-full bg-primary text-white font-bold text-sm">All Stories</button>
-<button class="whitespace-nowrap px-4 py-2 rounded-full text-primary/60 dark:text-white/60 font-semibold text-sm hover:bg-primary/5 transition-colors">Dental Implants</button>
-<button class="whitespace-nowrap px-4 py-2 rounded-full text-primary/60 dark:text-white/60 font-semibold text-sm hover:bg-primary/5 transition-colors">Root Canal</button>
-<button class="whitespace-nowrap px-4 py-2 rounded-full text-primary/60 dark:text-white/60 font-semibold text-sm hover:bg-primary/5 transition-colors">Cosmetic Dentistry</button>
-<button class="whitespace-nowrap px-4 py-2 rounded-full text-primary/60 dark:text-white/60 font-semibold text-sm hover:bg-primary/5 transition-colors">Orthodontics</button>
+<!-- Section 3: Inquiry Form & Interactive Map -->
+<section class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+<div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+<!-- Left Side: Form -->
+<div class="rounded-3xl bg-slate-50 p-8 lg:p-12">
+<h3 class="mb-2 text-3xl font-bold text-primary">Send Us a Message</h3>
+<p class="mb-10 text-slate-500">Please fill out the form below and our patient coordinator will contact you shortly.</p>
+<form action="#" class="space-y-6">
+<div class="grid gap-6 md:grid-cols-2">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Full Name</label>
+<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Email Address</label>
+<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="grid gap-6 md:grid-cols-2">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Phone Number</label>
+<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Service of Interest</label>
+<select class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all">
+<option>General Checkup</option>
+<option>Dental Implants</option>
+<option>Orthodontics (Braces/Aligners)</option>
+<option>Teeth Whitening</option>
+<option>Cosmetic Dentistry</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Your Message</label>
+<textarea class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="w-full rounded-xl bg-teal-brand py-4 text-sm font-bold text-white shadow-lg shadow-teal-brand/20 transition-all hover:bg-primary active:scale-95" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+<!-- Right Side: Map -->
+<div class="h-full min-h-[500px] overflow-hidden rounded-3xl bg-slate-100 shadow-inner">
+<div class="relative h-full w-full">
+<img alt="Map showing Vastrapur area Ahmedabad" class="h-full w-full object-cover grayscale opacity-80 brightness-90" data-alt="Detailed map of Vastrapur and Satellite area in Ahmedabad" data-location="Ahmedabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQtCYGfvdD-YbxzZZX9jzfm9Q5fPhJQ2gfpUX8ML3DCPig2hOLByWj44T6SOeT5UrWTpcBzCWNWz4HsadTFHBhKDg_BoPrsLiTge9eDlAA-dkE__PD4dRHjrZ3qq0BM9zni0sexjHcvScqDV3YYKvOl0-CexP7wE8agL2Z3tr55FTJjGsGroDzgWPQe4Y0RarYrHCNLPq6zS83vP3-thExCLVb8R19rM2-G3_0Z3DfLADsfhlaMo7Xp2znQ9l6R6Bd2BksbzMww"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="flex h-16 w-16 animate-pulse items-center justify-center rounded-full bg-teal-brand/20">
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-teal-brand text-white shadow-lg">
+<span class="material-symbols-outlined text-lg">location_on</span>
 </div>
 </div>
 </div>
-<!-- Google Reviews Summary -->
-<section class="py-12 bg-background-light dark:bg-background-dark">
-<div class="container mx-auto px-6 lg:px-20">
-<div class="bg-white dark:bg-primary/20 rounded-xl p-8 flex flex-col lg:flex-row items-center justify-between gap-8 border border-primary/5 shadow-sm">
+<div class="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 backdrop-blur shadow-xl">
 <div class="flex items-center gap-4">
-<img alt="Google Logo" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo_qVGk3DKpRpNSH0YLxEvi1shwwMpXDBVTobUS3mJfUODUczAtSG_wH5g3UIwrciY8GLWvArxzZfBnKjlFxKZFGz4XJSYaEjF-nGlyCXWsChcFLr1VO-r7cqSEcS2EkkeEgFX_fCaae7TOR2XVd820qIYAmM8YdRC0lHwSC79F3V_wuSg-X1rHgIldVwh49Zssv3QtuWlPvQfDNOQ3yNg2lU3VVBypefdHTH03emr0QWErcPMepAZQnhbeL4miDQb5pxlfWGW9g"/>
-<div>
-<p class="text-2xl font-black text-primary dark:text-white">4.9/5 Rating</p>
-<p class="text-primary/60 dark:text-white/60">Based on 500+ verified Google reviews</p>
-</div>
-</div>
-<div class="flex gap-1">
-<span class="material-symbols-outlined text-accent-gold text-3xl">star</span>
-<span class="material-symbols-outlined text-accent-gold text-3xl">star</span>
-<span class="material-symbols-outlined text-accent-gold text-3xl">star</span>
-<span class="material-symbols-outlined text-accent-gold text-3xl">star</span>
-<span class="material-symbols-outlined text-accent-gold text-3xl">star</span>
-</div>
-<button class="text-primary dark:text-accent-teal font-bold border-b-2 border-primary/20 hover:border-accent-teal transition-all pb-1">Read All Google Reviews</button>
-</div>
-</div>
-</section>
-<!-- Testimonials Grid -->
-<section class="py-16 bg-background-light dark:bg-background-dark">
-<div class="container mx-auto px-6 lg:px-20">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-<!-- Testimonial Card 1 -->
-<div class="bg-white dark:bg-primary/10 rounded-xl p-8 shadow-sm border border-primary/5 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
-<div class="absolute top-0 left-0 w-2 h-full bg-accent-teal"></div>
-<div class="flex justify-between items-start mb-6">
-<div class="flex gap-0.5">
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-</div>
-<div class="flex items-center gap-1.5 px-3 py-1 bg-accent-gold/10 rounded-full border border-accent-gold/20">
-<span class="material-symbols-outlined text-accent-gold text-sm">verified</span>
-<span class="text-accent-gold text-[10px] font-bold uppercase tracking-wider">Verified Review</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-4 text-primary dark:text-white leading-snug">"Life-Changing Painless Surgery"</h3>
-<p class="text-primary/70 dark:text-white/70 leading-relaxed mb-8 flex-grow">
-                            "I was terrified of dental surgery for years, which caused my oral health to deteriorate. But the team at Ivories made it completely painless. From the consultation to the final implant placement, I felt zero discomfort. The technology they use is incredible. I can finally smile and eat with confidence again!"
-                        </p>
-<div class="flex items-center gap-4 mt-auto">
-<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center border-2 border-accent-teal/30">
-<span class="text-primary dark:text-accent-teal font-bold text-lg">NO</span>
+<div class="h-12 w-12 shrink-0 rounded-lg bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined">directions</span>
 </div>
 <div>
-<p class="font-bold text-primary dark:text-white">Niraj Oza</p>
-<div class="flex items-center gap-2">
-<span class="text-xs text-primary/50 dark:text-white/50">Mumbai, India</span>
-<span class="w-1 h-1 bg-primary/20 rounded-full"></span>
-<span class="text-xs font-bold text-accent-teal">Dental Implants</span>
+<p class="text-xs font-bold uppercase tracking-wider text-teal-brand">Quick Nav</p>
+<p class="text-sm font-bold text-primary">Vastrapur, Ahmedabad</p>
 </div>
-</div>
-</div>
-</div>
-<!-- Testimonial Card 2 -->
-<div class="bg-white dark:bg-primary/10 rounded-xl p-8 shadow-sm border border-primary/5 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
-<div class="absolute top-0 left-0 w-2 h-full bg-accent-teal"></div>
-<div class="flex justify-between items-start mb-6">
-<div class="flex gap-0.5">
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-</div>
-<div class="flex items-center gap-1.5 px-3 py-1 bg-accent-gold/10 rounded-full border border-accent-gold/20">
-<span class="material-symbols-outlined text-accent-gold text-sm">verified</span>
-<span class="text-accent-gold text-[10px] font-bold uppercase tracking-wider">Verified Review</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-4 text-primary dark:text-white leading-snug">"Easiest Wisdom Tooth Removal Ever"</h3>
-<p class="text-primary/70 dark:text-white/70 leading-relaxed mb-8 flex-grow">
-                            "I had heard horror stories about wisdom tooth extractions, but Dr. Mehra made it look like a breeze. The recovery was swift and the instructions provided were so helpful. The clinic hygiene is top-notch. Highly recommended for anyone who is nervous about dental work!"
-                        </p>
-<div class="flex items-center gap-4 mt-auto">
-<div class="size-14 rounded-full bg-center bg-cover border-2 border-accent-teal/30" data-alt="Satisfied female patient smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYOEbeVs7DHwvKnVZUJrEN3iCqTys6uVklHbRBaPZ_Sn6viD-WEx8DWYvqh7XUGCMzGl_3e-Q470V3F3tX8Dx3EExTO8_Gb-n9dlfEOEUVMHYqgqay0skL4uLul5ZzW9DR_IUDDkpt2hM8tdg4BT43ODq5cfx4a8FT8fSWLRmAyJnQxLFdLgwT5iVA1wq3u-EOcR6ssYKglfcDhoWcXkccPPvAlk0C1lFo8IZUrHjhZpKr7sxrGE0CUF4Gi9gTrjBs1V04Xl4hag");'></div>
-<div>
-<p class="font-bold text-primary dark:text-white">Devanshi Mehta</p>
-<div class="flex items-center gap-2">
-<span class="text-xs text-primary/50 dark:text-white/50">Graphic Designer</span>
-<span class="w-1 h-1 bg-primary/20 rounded-full"></span>
-<span class="text-xs font-bold text-accent-teal">Oral Surgery</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Testimonial Card 3 -->
-<div class="bg-white dark:bg-primary/10 rounded-xl p-8 shadow-sm border border-primary/5 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
-<div class="absolute top-0 left-0 w-2 h-full bg-accent-teal"></div>
-<div class="flex justify-between items-start mb-6">
-<div class="flex gap-0.5">
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-</div>
-<div class="flex items-center gap-1.5 px-3 py-1 bg-accent-gold/10 rounded-full border border-accent-gold/20">
-<span class="material-symbols-outlined text-accent-gold text-sm">verified</span>
-<span class="text-accent-gold text-[10px] font-bold uppercase tracking-wider">Verified Review</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-4 text-primary dark:text-white leading-snug">"My Smile Is Finally Perfect"</h3>
-<p class="text-primary/70 dark:text-white/70 leading-relaxed mb-8 flex-grow">
-                            "I went for clear aligners at Ivories and the results exceeded my expectations. The digital scanning process was so cool, no messy impressions. 8 months later and my teeth are perfectly straight. If you're looking for cosmetic work, this is the place."
-                        </p>
-<div class="flex items-center gap-4 mt-auto">
-<div class="size-14 rounded-full bg-center bg-cover border-2 border-accent-teal/30" data-alt="Happy male patient portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5yEaRaS6JErLdQHCWC_ZopAEmurLUq5kEsPpbVx-UPJcTjdJwvVzGwRsf4Ha-uuUhXi9wV61ni959oOdI2O0WpSyFw8-bPYmiAz_mywlJimTluT88Ws34uw_gVcWTrmUMFPjDafTZGdWyt3tYvZ5KOVhllyMVwKHz_4N8k3AF4v8_7v_vGm3vf1diuK-aCKv8hbFmvybzE3_5nG4kXzj59J50V8SZGWQGTc2xAUNsgM_DGhZypiEd3BBsCHCcnaqhC9eHITV1dA");'></div>
-<div>
-<p class="font-bold text-primary dark:text-white">Arjun Khandelwal</p>
-<div class="flex items-center gap-2">
-<span class="text-xs text-primary/50 dark:text-white/50">Tech Professional</span>
-<span class="w-1 h-1 bg-primary/20 rounded-full"></span>
-<span class="text-xs font-bold text-accent-teal">Orthodontics</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Testimonial Card 4 -->
-<div class="bg-white dark:bg-primary/10 rounded-xl p-8 shadow-sm border border-primary/5 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
-<div class="absolute top-0 left-0 w-2 h-full bg-accent-teal"></div>
-<div class="flex justify-between items-start mb-6">
-<div class="flex gap-0.5">
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-<span class="material-symbols-outlined text-accent-gold text-lg">star</span>
-</div>
-<div class="flex items-center gap-1.5 px-3 py-1 bg-accent-gold/10 rounded-full border border-accent-gold/20">
-<span class="material-symbols-outlined text-accent-gold text-sm">verified</span>
-<span class="text-accent-gold text-[10px] font-bold uppercase tracking-wider">Verified Review</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-4 text-primary dark:text-white leading-snug">"Precision Root Canal Therapy"</h3>
-<p class="text-primary/70 dark:text-white/70 leading-relaxed mb-8 flex-grow">
-                            "Root canals usually sound scary, but at Ivories, they use microscopes for extreme precision. I felt nothing during the procedure and my tooth was saved. The doctor explained everything on the monitor as well. Very professional service!"
-                        </p>
-<div class="flex items-center gap-4 mt-auto">
-<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center border-2 border-accent-teal/30">
-<span class="text-primary dark:text-accent-teal font-bold text-lg">SP</span>
-</div>
-<div>
-<p class="font-bold text-primary dark:text-white">Sonia Parekh</p>
-<div class="flex items-center gap-2">
-<span class="text-xs text-primary/50 dark:text-white/50">Educator</span>
-<span class="w-1 h-1 bg-primary/20 rounded-full"></span>
-<span class="text-xs font-bold text-accent-teal">Root Canal</span>
-</div>
+<button class="ml-auto rounded-lg bg-primary px-4 py-2 text-xs font-bold text-white hover:bg-teal-brand transition-colors">Open Maps</button>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Video Testimonials -->
-<section class="py-20 bg-white dark:bg-background-dark/30">
-<div class="container mx-auto px-6 lg:px-20">
-<div class="flex flex-col items-center text-center mb-12">
-<h2 class="text-3xl lg:text-4xl font-black text-primary dark:text-white mb-4">Watch Our Patient Stories</h2>
-<p class="text-primary/60 dark:text-white/60 max-w-2xl">Hear directly from those who have experienced the Ivories difference through high-definition video testimonials.</p>
+<!-- Section 4: Opening Hours -->
+<section class="bg-background-light py-24">
+<div class="mx-auto max-w-4xl px-6 lg:px-10">
+<div class="text-center mb-16">
+<h3 class="font-serif text-4xl font-medium text-primary">Clinic Hours</h3>
+<div class="mx-auto mt-4 h-1 w-20 bg-gold-accent"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Video Placeholder 1 -->
-<div class="group relative aspect-video bg-primary/10 rounded-xl overflow-hidden cursor-pointer">
-<img alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Patient sitting in dental chair smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgKvaiUUffqP2rf0SS3yKS31_2aVqUA7Rdib8jalKsFd3dbgutRLXZJsdsLKo8VE0y0yOEX8QR7oY5Wvx14hKkEi8Y6chJNGUjuGT383qhzgO_DY10zc-PLjyIh7GmGkYJv18Us22xUE_JY3JRxaPxR_V8hF1BJ94jjr0LUFkTVU3F8BL6BUGWvuseFyyXuAnhOYCFwirMGLTwZdRwTx73p6gKH1I_IQoeB129FEbcELmtRHW4wNyGUHtcC2YOJlT8FkTgO_BkQ"/>
-<div class="absolute inset-0 bg-primary/40 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-<div class="size-16 rounded-full bg-accent-teal flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+<div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+<table class="w-full text-left">
+<thead class="bg-slate-50">
+<tr>
+<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Day</th>
+<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Timings</th>
+<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100">
+<tr>
+<td class="px-8 py-5 font-bold text-primary">Monday - Saturday</td>
+<td class="px-8 py-5 text-slate-600">9:30 AM - 8:30 PM</td>
+<td class="px-8 py-5"><span class="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-700">Open</span></td>
+</tr>
+<tr>
+<td class="px-8 py-5 font-bold text-primary">Sunday</td>
+<td class="px-8 py-5 text-slate-600">10:30 AM - 1:30 PM</td>
+<td class="px-8 py-5"><span class="inline-flex items-center rounded-full bg-teal-brand/10 px-2.5 py-0.5 text-xs font-bold text-teal-brand">By Appointment</span></td>
+</tr>
+</tbody>
+</table>
 </div>
+<p class="mt-6 text-center text-sm text-slate-500 italic">
+                    Note: Clinical timings may vary during public holidays. Please call ahead to confirm.
+                </p>
 </div>
-<div class="absolute bottom-4 left-4 right-4">
-<p class="text-white font-bold text-lg drop-shadow-md leading-tight">Transformation Journey: Sarah D.</p>
-<p class="text-white/80 text-sm">Full Mouth Restoration</p>
+</section>
+<!-- Section 5: Emergency Care CTA -->
+<section class="mx-auto max-w-7xl px-6 pb-24 lg:px-10">
+<div class="relative overflow-hidden rounded-[2.5rem] bg-primary px-8 py-16 text-center lg:px-20 lg:py-24">
+<!-- Background Pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#24B9D7 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-teal-brand/20 text-teal-brand">
+<span class="material-symbols-outlined text-5xl">emergency_home</span>
 </div>
-</div>
-<!-- Video Placeholder 2 -->
-<div class="group relative aspect-video bg-primary/10 rounded-xl overflow-hidden cursor-pointer">
-<img alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dentist explaining a procedure to a patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5fBxbACd4-PQ-SqrPbah_VK3xmxStbZM5GiSelYT0bE6BXvEYTTpHjG54WKT227jSEmBylNgt1wanM4LwYkjBGoROeh5PhUo-brrr2bRP8OLjFA0NARxtPv5y1hg4SBNcfXJDmtK-SNYBGMUEgCsfdA7KCrbPQ8C9_v-Dmici5BgmtB8dbynqK5LTYFDxEiH9CWcgE7RafRQjKJ_wQiiUn7uvEQdgEUdHg-9M5wCRv4BZ2UPsM72cmkObHVuTCPu2EOGc0xbKAA"/>
-<div class="absolute inset-0 bg-primary/40 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-<div class="size-16 rounded-full bg-accent-teal flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-4 left-4 right-4">
-<p class="text-white font-bold text-lg drop-shadow-md leading-tight">Painless Root Canal: My Experience</p>
-<p class="text-white/80 text-sm">Root Canal Therapy</p>
-</div>
-</div>
-<!-- Video Placeholder 3 -->
-<div class="group relative aspect-video bg-primary/10 rounded-xl overflow-hidden cursor-pointer">
-<img alt="Video Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Patient looking at their new smile in a mirror" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTL_rJDInB7hL214cfPPgjZZYmuVEYIQ_4XXh0fyvL6T0tSaJdnDarL15viLLHRIv7SJyYuvE51DKlk7bRo7cUt_Xl4SfnOkvoPKkv3oGQMU6XZuIEccSQJt_Gv2FHP8yIylt_yNKpiK9k0-n8PHXHw_HrW3Q9quvwWEgEs-PMyNyHQ0weHo_1Q47KAlZMrtAypeQe7VvoH4W7mz6E7yJuakkgXaR-EK-P1KP_ANWJEpFPEWRRb2Sx63belFmoepy2X78bWidnBg"/>
-<div class="absolute inset-0 bg-primary/40 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-<div class="size-16 rounded-full bg-accent-teal flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-4 left-4 right-4">
-<p class="text-white font-bold text-lg drop-shadow-md leading-tight">Getting Dental Implants Abroad</p>
-<p class="text-white/80 text-sm">Dental Implants</p>
-</div>
+<h3 class="mb-4 text-3xl font-bold text-white lg:text-5xl">Dental Emergency?</h3>
+<p class="mb-10 max-w-xl text-lg text-slate-300">
+                        We prioritize urgent cases. If you're experiencing severe pain or dental trauma, call our 24/7 hotline immediately.
+                    </p>
+<div class="flex flex-col gap-4 sm:flex-row">
+<a class="group flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-extrabold text-primary transition-all hover:bg-teal-brand hover:text-white" href="tel:+919879936039">
+<span class="material-symbols-outlined">call</span>
+                            +91 9879936039
+                        </a>
+<button class="rounded-full border border-white/20 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10">
+                            Emergency Protocols
+                        </button>
 </div>
 </div>
 </div>
 </section>
-<!-- Final CTA -->
-<section class="py-24 bg-primary text-center relative overflow-hidden">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-teal via-white/20 to-accent-gold"></div>
-<div class="container mx-auto px-6 relative z-10">
-<h2 class="text-white text-4xl lg:text-5xl font-black mb-6">Ready to Start Your Own Smile Story?</h2>
-<p class="text-white/70 text-lg mb-12 max-w-2xl mx-auto">Join the thousands of happy patients who chose Ivories for world-class, painless dentistry. Book your consultation today.</p>
-<button class="bg-accent-teal text-primary hover:bg-white px-10 py-5 rounded-lg text-lg font-black transition-all shadow-xl hover:shadow-accent-teal/20">
-                    Book Your Consultation Now
-                </button>
-</div>
-<!-- Decorative circle -->
-<div class="absolute -bottom-24 -right-24 size-64 rounded-full border border-white/5 pointer-events-none"></div>
-</section>
+</main>
 <!-- Footer -->
-<footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-12">
-<div class="container mx-auto px-6 lg:px-20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 text-primary dark:text-accent-teal mb-6">
-<div class="size-6">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
-</svg>
+<footer class="bg-primary pt-20 pb-10 text-white">
+<div class="mx-auto max-w-7xl px-6 lg:px-10">
+<div class="grid gap-12 lg:grid-cols-4">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-8">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-brand text-white">
+<span class="material-symbols-outlined text-2xl">dentistry</span>
 </div>
-<h2 class="text-primary dark:text-white text-lg font-extrabold">Ivories Dental</h2>
+<h2 class="text-xl font-extrabold tracking-tight">IVORIES <span class="text-teal-brand">DENTAL</span></h2>
 </div>
-<p class="text-primary/60 dark:text-white/60 text-sm leading-relaxed">
-                            Restoring confidence through world-class dentistry. Your journey to a perfect smile starts here.
-                        </p>
+<p class="max-w-md text-slate-400 leading-relaxed">
+                        Redefining dental care through cutting-edge technology and luxury patient experience. Ahmedabad's premier destination for dental implants and aesthetic transformations.
+                    </p>
+<div class="mt-8 flex gap-4">
+<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">thumb_up</span></a>
+</div>
 </div>
 <div>
-<h4 class="font-bold mb-6">Treatments</h4>
-<ul class="space-y-4 text-sm text-primary/60 dark:text-white/60">
-<li><a class="hover:text-accent-teal" href="#">Dental Implants</a></li>
-<li><a class="hover:text-accent-teal" href="#">Cosmetic Dentistry</a></li>
-<li><a class="hover:text-accent-teal" href="#">Orthodontics</a></li>
-<li><a class="hover:text-accent-teal" href="#">Root Canal Therapy</a></li>
+<h4 class="mb-8 text-sm font-bold uppercase tracking-widest text-teal-brand">Treatments</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Dental Implants</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Smile Makeover</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Invisalign®</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Root Canal Treatment</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6">Clinic</h4>
-<ul class="space-y-4 text-sm text-primary/60 dark:text-white/60">
-<li><a class="hover:text-accent-teal" href="#">Our Doctors</a></li>
-<li><a class="hover:text-accent-teal" href="#">Real Stories</a></li>
-<li><a class="hover:text-accent-teal" href="#">Technology</a></li>
-<li><a class="hover:text-accent-teal" href="#">Blog</a></li>
+<h4 class="mb-8 text-sm font-bold uppercase tracking-widest text-teal-brand">Company</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Meet the Doctors</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-bold mb-6">Connect</h4>
-<div class="flex gap-4 mb-6">
-<div class="size-10 rounded-full bg-primary/5 dark:bg-white/5 flex items-center justify-center hover:bg-accent-teal hover:text-white transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-lg">public</span>
 </div>
-<div class="size-10 rounded-full bg-primary/5 dark:bg-white/5 flex items-center justify-center hover:bg-accent-teal hover:text-white transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-lg">mail</span>
-</div>
-<div class="size-10 rounded-full bg-primary/5 dark:bg-white/5 flex items-center justify-center hover:bg-accent-teal hover:text-white transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-lg">call</span>
-</div>
-</div>
-<p class="text-sm text-primary/60 dark:text-white/60">123 Dental Street, Mumbai, IN</p>
-</div>
-</div>
-<div class="mt-12 pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs text-primary/40 dark:text-white/40">© 2024 Ivories Dental Clinic. All rights reserved.</p>
-<div class="flex gap-6 text-xs text-primary/40 dark:text-white/40">
-<a class="hover:text-primary dark:hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-primary dark:hover:text-white" href="#">Terms of Service</a>
-</div>
+<div class="mt-20 border-t border-white/10 pt-10 text-center text-sm text-slate-500">
+<p>© 2024 Ivories Dental Clinic. All Rights Reserved. Crafted for Excellence.</p>
 </div>
 </div>
 </footer>
-</div>
 </body></html>
