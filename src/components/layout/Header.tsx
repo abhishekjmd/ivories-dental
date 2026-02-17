@@ -1,4 +1,15 @@
-const navItems = ["Home", "Treatments", "Doctors", "Technology", "Contact"];
+import Link from "next/link";
+
+const treatmentItems = [
+  { label: "Dental Braces", href: "#" },
+  { label: "Invisalign Aligners", href: "#" },
+  { label: "Kids Dentistry", href: "#" },
+  { label: "Smile Designing", href: "#" },
+  { label: "Teeth Cleaning and Whitening", href: "#" },
+  { label: "Teeth Removal", href: "/treatments/teeth-removal" },
+  { label: "Crown and Bridges", href: "#" },
+  { label: "Dental Implants", href: "#" },
+];
 
 export default function Header() {
   return (
@@ -32,7 +43,7 @@ export default function Header() {
 
       <header className="sticky top-0 z-50 w-full border-b border-[#200b3c]/10 bg-white/95 shadow-sm backdrop-blur-md">
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-12">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="flex size-10 items-center justify-center rounded-lg bg-[#200b3c] text-[#24B9D7]">
               <span className="material-symbols-outlined text-3xl">dentistry</span>
             </div>
@@ -44,23 +55,55 @@ export default function Header() {
                 DENTAL CLINIC
               </p>
             </div>
-          </div>
+          </Link>
 
           <ul className="hidden items-center gap-8 text-sm font-semibold tracking-wider uppercase lg:flex">
-            {navItems.map((item, index) => (
-              <li key={item}>
-                <a
-                  className={
-                    index === 0
-                      ? "text-[#24B9D7]"
-                      : "transition-colors hover:text-[#24B9D7]"
-                  }
-                  href="#"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+            <li>
+              <Link className="text-[#24B9D7]" href="/">
+                Home
+              </Link>
+            </li>
+
+            <li className="group relative">
+              <button
+                className="flex cursor-pointer items-center gap-1 transition-colors hover:text-[#24B9D7]"
+                type="button"
+              >
+                Treatments
+                <span className="material-symbols-outlined text-base">expand_more</span>
+              </button>
+
+              <div className="invisible absolute top-full left-1/2 mt-4 w-80 -translate-x-1/2 rounded-xl border border-[#200b3c]/10 bg-white p-2 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <ul className="space-y-1">
+                  {treatmentItems.map((item) => (
+                    <li key={item.label}>
+                      <Link
+                        className="block rounded-lg px-4 py-2 text-xs font-semibold tracking-wide text-[#200b3c] uppercase transition-colors hover:bg-[#24B9D7]/10 hover:text-[#24B9D7]"
+                        href={item.href}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a className="transition-colors hover:text-[#24B9D7]" href="#">
+                Doctors
+              </a>
+            </li>
+            <li>
+              <a className="transition-colors hover:text-[#24B9D7]" href="#">
+                Technology
+              </a>
+            </li>
+            <li>
+              <a className="transition-colors hover:text-[#24B9D7]" href="#">
+                Contact
+              </a>
+            </li>
           </ul>
 
           <div className="flex items-center gap-4">
