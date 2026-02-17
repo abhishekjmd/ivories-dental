@@ -6,9 +6,12 @@ const treatmentItems = [
   { label: "Invisalign Aligners", href: "#" },
   { label: "Kids Dentistry", href: "/treatments/kids-dentistry" },
   { label: "Smile Designing", href: "/treatments/smile-designing" },
-  { label: "Teeth Cleaning and Whitening", href: "#" },
+  {
+    label: "Teeth Cleaning and Whitening",
+    href: "/treatments/teeth-cleaning-whitening",
+  },
   { label: "Teeth Removal", href: "/treatments/teeth-removal" },
-  { label: "Crown and Bridges", href: "#" },
+  { label: "Crown and Bridges", href: "/treatments/crowns-bridges" },
   { label: "Dental Implants", href: "#" },
 ];
 
