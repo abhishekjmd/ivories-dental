@@ -99,9 +99,12 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a className="transition-colors hover:text-[#24B9D7]" href="#">
-                Technology
-              </a>
+              <Link
+                className="transition-colors hover:text-[#24B9D7]"
+                href="/testimonials"
+              >
+                Testimonials
+              </Link>
             </li>
             <li>
               <a className="transition-colors hover:text-[#24B9D7]" href="#">
