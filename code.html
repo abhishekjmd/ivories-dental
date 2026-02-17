@@ -3,7 +3,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Crowns &amp; Bridges | Ivories Dental Clinic</title>
+<title>Dental Implants | Ivories Dental Clinic</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -14,8 +14,9 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#0B1F3A", // Deep Navy
-                        "accent": "#24B9D7",  // Signature Teal
+                        "primary": "#0B1F3A",
+                        "accent-teal": "#24B9D7",
+                        "accent-gold": "#F7BB00",
                         "background-light": "#f7f6f8",
                         "background-dark": "#181220",
                     },
@@ -33,350 +34,343 @@
         }
     </script>
 <style>
-        body { font-family: 'Manrope', sans-serif; }
-        .bg-navy { background-color: #0B1F3A; }
-        .text-teal { color: #24B9D7; }
-        .bg-teal { background-color: #24B9D7; }
-        .border-teal { border-color: #24B9D7; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .serif-heading {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 bg-white/90 dark:bg-primary/90 backdrop-blur-md border-b border-gray-200 dark:border-primary/20">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<div class="text-accent">
-<span class="material-symbols-outlined text-4xl">dentistry</span>
+<body class="bg-background-light text-primary selection:bg-accent-teal selection:text-white">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 md:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-accent-teal">
+<span class="material-symbols-outlined text-4xl">medical_services</span>
 </div>
-<h2 class="text-xl font-extrabold tracking-tight">Ivories <span class="text-accent font-light">Clinic</span></h2>
+<h2 class="text-primary text-xl font-extrabold tracking-tight">IVORIES <span class="font-light text-accent-teal">DENTAL</span></h2>
 </div>
-<nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider">
-<a class="hover:text-accent transition-colors" href="#">Home</a>
-<a class="text-accent" href="#">Services</a>
-<a class="hover:text-accent transition-colors" href="#">About Us</a>
-<a class="hover:text-accent transition-colors" href="#">Gallery</a>
-<a class="hover:text-accent transition-colors" href="#">Contact</a>
+<nav class="hidden lg:flex items-center gap-10">
+<a class="text-primary/70 hover:text-accent-teal text-sm font-semibold transition-colors" href="#">Treatments</a>
+<a class="text-primary/70 hover:text-accent-teal text-sm font-semibold transition-colors" href="#">Technology</a>
+<a class="text-primary/70 hover:text-accent-teal text-sm font-semibold transition-colors" href="#">Patient Journey</a>
+<a class="text-primary/70 hover:text-accent-teal text-sm font-semibold transition-colors" href="#">About Dr. Shah</a>
 </nav>
-<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-accent transition-all">
-                Book Consultation
-            </button>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Book Appointment
+                </button>
+</div>
 </div>
 </header>
 <!-- Hero Section -->
-<section class="relative h-[600px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="Happy patient with a bright confident smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC184ltaBZbwCgZpOVJO8n2u-djQl6SMemmT_fPgobaMHYfaFOWnzuNSlEFmfdT8ySOOjyZUL_6RNXt9F744uev0e38DIwcB99A__NaII57rspJz64ph4nFye71SZuPTFb2PfiCVpObEylZkl-sAEdJGJ8ksMUdi-a1XpSxfrJkSMgR2Vfax1QtnA5HL9ypWemn8kNWBL2Faf9euW5w830oeDp_cMXu3hn6Wzf7DlpraXr1X1y3q7r7ojR4AqW6iRlzPe_q2Wt7Iw"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
-<div class="max-w-2xl text-white">
-<span class="bg-accent/20 text-accent px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block border border-accent/30">Premium Restorative Care</span>
-<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Restore Your Smile with <span class="text-accent">Precision</span> Crowns &amp; Bridges
+<section class="relative bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 md:px-20 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-8 z-10">
+<div class="inline-flex items-center gap-2 bg-accent-teal/10 text-accent-teal px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">verified</span> Specialized Implant Care
+                </div>
+<h1 class="serif-heading text-5xl md:text-7xl text-primary leading-[1.1]">
+                    Restore Your Smile with <span class="text-accent-teal">Advanced</span> Dental Implants
                 </h1>
-<p class="text-lg text-gray-200 mb-8 leading-relaxed max-w-xl">
-                    Experience the perfect blend of restorative function and high-end aesthetics with our custom-crafted zirconia and ceramic dental solutions.
+<p class="text-lg text-primary/70 max-w-xl leading-relaxed">
+                    Experience permanent tooth replacement led by Dr. Alaap Shah. Ivories uses advanced technology to ensure a painless, precise, and life-changing procedure.
                 </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-accent hover:bg-white hover:text-primary text-primary px-8 py-4 rounded-lg font-bold transition-all shadow-lg shadow-accent/20">
-                        Book Consultation
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-accent-teal hover:bg-accent-teal/90 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-accent-teal/30">
+                        Start Your Journey
                     </button>
-<button class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-bold transition-all flex items-center gap-2">
+<button class="flex items-center justify-center gap-2 border-2 border-primary/10 hover:border-accent-teal text-primary px-8 py-4 rounded-xl font-bold text-lg transition-all">
 <span class="material-symbols-outlined">play_circle</span> View Gallery
                     </button>
 </div>
 </div>
+<div class="flex-1 relative">
+<div class="absolute -top-10 -right-10 w-72 h-72 bg-accent-teal/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-72 h-72 bg-accent-gold/10 rounded-full blur-3xl"></div>
+<img alt="Smiling Patient" class="relative z-10 w-full aspect-[4/5] object-cover rounded-2xl shadow-2xl border-8 border-white" data-alt="Happy patient smiling showing white teeth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs6zq_SYYctDksc90CtPP5zgFv_HmEBqEYlxBgPL3_XcXZWZeSovEzzo5JQIKZw7cOlDdz4_F_16XNQTgygXj51uVMd_PnfoAGw5rXDAEduGDeRmxRm6OoJ6UQhL6sYohCP_i0mm5f0FA0-_tIKRPRUAdASWXZ0-R-P1kPX-P7vKQoAsHIS48Vqba9L2482N7X64L3VJSd6WFTecrn7ek8JOml25hw9fSbyIWhZk1zGD4gl914MbW8zg5ux80AB4hQ1ZjePvQFng"/>
+<div class="absolute bottom-6 -left-6 z-20 bg-white p-6 rounded-2xl shadow-xl border border-primary/5">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-accent-gold flex items-center justify-center text-white">
+<span class="material-symbols-outlined">star</span>
 </div>
-</section>
-<!-- Introduction Section -->
-<section class="py-24 bg-white dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-16 items-center">
-<div class="order-2 lg:order-1">
-<div class="relative rounded-2xl overflow-hidden shadow-2xl">
-<img class="w-full aspect-[4/3] object-cover" data-alt="Professional dental crown model closeup display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfyIZ6E6hCYc3n3CszM3TE4huzCMB6eaBj2z2XcOJqzwPANLhNA3JX7vaGdEZBBOmNqz23JO2Zkh4CuIxoO-XmkqXO3GrdnfbyvdV1l8gqwUp_Bg5xxDiSwUeSf4nhGPIHeVP3tJP4-Bflb9R92N8T2Z86fCItJkE9xW_dUGRH12CnAZQuHTthGWW75X4E8NuWYOQPJX1rYuBnvrD8GNgzYal1fgYXZhVeyxzppqbXiftCtYYn8vi3rtPttb2m-BU85CMWCEqZkA"/>
-<div class="absolute bottom-6 right-6 bg-accent p-4 rounded-xl shadow-xl">
-<p class="text-primary font-bold text-sm">Clinical Excellence</p>
-</div>
-</div>
-</div>
-<div class="order-1 lg:order-2">
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Precision Restoration</h2>
-<h3 class="text-4xl font-extrabold mb-6 leading-tight">What are Crowns &amp; Bridges?</h3>
-<p class="text-gray-600 dark:text-gray-400 text-lg mb-6 leading-relaxed">
-                        Crowns and bridges are fixed prosthetic devices. Unlike removable devices such as dentures, which you can take out and clean daily, crowns and bridges are cemented onto existing teeth or implants, and can only be removed by a dentist.
-                    </p>
-<div class="space-y-4">
-<div class="flex gap-4 p-4 rounded-xl bg-background-light dark:bg-primary/10 border border-gray-100 dark:border-primary/20">
-<span class="material-symbols-outlined text-accent text-3xl">looks_one</span>
 <div>
-<h4 class="font-bold text-lg">Dental Crowns</h4>
-<p class="text-sm text-gray-500">A custom cap that covers a damaged tooth to restore its shape, size, strength, and appearance.</p>
-</div>
-</div>
-<div class="flex gap-4 p-4 rounded-xl bg-background-light dark:bg-primary/10 border border-gray-100 dark:border-primary/20">
-<span class="material-symbols-outlined text-accent text-3xl">looks_two</span>
-<div>
-<h4 class="font-bold text-lg">Dental Bridges</h4>
-<p class="text-sm text-gray-500">A fixed prosthetic used to replace one or more missing teeth by joining an artificial tooth to adjacent teeth or implants.</p>
-</div>
+<p class="text-xs text-primary/50 font-bold uppercase">Patient Rating</p>
+<p class="text-lg font-extrabold text-primary">4.9/5 Excellent</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Why Choose Section -->
-<section class="py-24 bg-background-light dark:bg-primary/5">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">The Ivories Advantage</h2>
-<h3 class="text-4xl font-extrabold">Why Choose Our Restorative Services?</h3>
+<!-- Technology Focus Section -->
+<section class="py-20 bg-background-light">
+<div class="max-w-7xl mx-auto px-6 md:px-20 text-center mb-16">
+<h2 class="text-primary text-4xl font-extrabold mb-4 tracking-tight">Our Technology Focus</h2>
+<p class="text-primary/60 max-w-2xl mx-auto">We invest in the world's most advanced dental technologies to ensure your procedure is minimally invasive and highly accurate.</p>
 </div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Card 1 -->
-<div class="bg-white dark:bg-primary/20 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-primary/30 group">
-<div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
-<span class="material-symbols-outlined text-accent group-hover:text-white text-3xl">auto_fix_high</span>
+<div class="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Tech Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-primary/5 hover:border-accent-teal transition-all group shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center text-accent-teal mb-6 group-hover:bg-accent-teal group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">biotech</span>
 </div>
-<h4 class="text-xl font-bold mb-3">Natural Appearance</h4>
-<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Our master technicians use multi-layered ceramics to mimic the translucency of natural enamel.</p>
+<h3 class="text-xl font-bold text-primary mb-3">Microscopic Precision</h3>
+<p class="text-primary/70 leading-relaxed">Unmatched accuracy for complex implant placements using high-definition surgical microscopes.</p>
 </div>
-<!-- Card 2 -->
-<div class="bg-white dark:bg-primary/20 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-primary/30 group">
-<div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
-<span class="material-symbols-outlined text-accent group-hover:text-white text-3xl">restaurant</span>
+<!-- Tech Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-primary/5 hover:border-accent-teal transition-all group shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center text-accent-teal mb-6 group-hover:bg-accent-teal group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">3d_rotation</span>
 </div>
-<h4 class="text-xl font-bold mb-3">Chewing Efficiency</h4>
-<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Restore full bite force and enjoy your favorite foods again without discomfort or hesitation.</p>
+<h3 class="text-xl font-bold text-primary mb-3">Digital 3D Scans</h3>
+<p class="text-primary/70 leading-relaxed">Comprehensive CBCT mapping for a perfect fit, predictable outcomes, and significantly faster recovery times.</p>
 </div>
-<!-- Card 3 -->
-<div class="bg-white dark:bg-primary/20 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-primary/30 group">
-<div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
-<span class="material-symbols-outlined text-accent group-hover:text-white text-3xl">diamond</span>
+<!-- Tech Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-primary/5 hover:border-accent-teal transition-all group shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center text-accent-teal mb-6 group-hover:bg-accent-teal group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">flare</span>
 </div>
-<h4 class="text-xl font-bold mb-3">Durable Materials</h4>
-<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">We utilize high-strength Zirconia and E-Max ceramic for long-lasting, fracture-resistant results.</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white dark:bg-primary/20 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-primary/30 group">
-<div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
-<span class="material-symbols-outlined text-accent group-hover:text-white text-3xl">health_and_safety</span>
-</div>
-<h4 class="text-xl font-bold mb-3">Long-Term Health</h4>
-<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Prevent adjacent teeth from shifting and preserve your bone structure and overall oral integrity.</p>
-</div>
+<h3 class="text-xl font-bold text-primary mb-3">Laser Technology</h3>
+<p class="text-primary/70 leading-relaxed">Minimally invasive procedures that reduce discomfort and promote rapid tissue healing without sutures.</p>
 </div>
 </div>
 </section>
-<!-- The Process Section -->
-<section class="py-24 bg-primary text-white overflow-hidden relative">
-<div class="absolute right-0 top-0 w-1/3 h-full opacity-10">
-<span class="material-symbols-outlined text-[400px]">history_edu</span>
-</div>
-<div class="max-w-7xl mx-auto px-6 relative z-10">
+<!-- Patient Journey Section -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 md:px-20">
 <div class="text-center mb-20">
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Patient Journey</h2>
-<h3 class="text-4xl font-extrabold text-white">The Ivories Restoration Process</h3>
+<h2 class="text-primary text-4xl font-extrabold mb-4 tracking-tight">Your Patient Journey</h2>
+<p class="text-primary/60">Three simple steps to your forever smile.</p>
 </div>
-<div class="grid md:grid-cols-3 gap-0 relative">
-<!-- Connector line -->
-<div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-accent/20"></div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-16">
 <!-- Step 1 -->
-<div class="relative flex flex-col items-center text-center px-8 mb-12 md:mb-0">
-<div class="w-24 h-24 rounded-full bg-accent text-primary flex items-center justify-center text-3xl font-black mb-8 relative z-10 shadow-[0_0_30px_rgba(36,185,215,0.3)]">
-                        01
-                    </div>
-<h4 class="text-xl font-bold mb-4">Preparation</h4>
-<p class="text-gray-300 text-sm">Comprehensive assessment, 3D imaging, and gentle tooth reshaping to ensure a perfect foundation.</p>
+<div class="relative text-center">
+<div class="w-20 h-20 bg-white border-4 border-accent-gold text-accent-gold rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-8 shadow-lg relative z-10">1</div>
+<div class="hidden md:block absolute top-10 left-1/2 w-full border-t-2 border-dashed border-accent-gold/30 -z-0"></div>
+<h4 class="text-xl font-bold text-primary mb-4">Initial Consultation</h4>
+<p class="text-primary/70">Meet Dr. Shah for a detailed 3D scan and a personalized treatment plan tailored to your health goals.</p>
 </div>
 <!-- Step 2 -->
-<div class="relative flex flex-col items-center text-center px-8 mb-12 md:mb-0">
-<div class="w-24 h-24 rounded-full bg-accent text-primary flex items-center justify-center text-3xl font-black mb-8 relative z-10 shadow-[0_0_30px_rgba(36,185,215,0.3)]">
-                        02
-                    </div>
-<h4 class="text-xl font-bold mb-4">Fabrication</h4>
-<p class="text-gray-300 text-sm">Our master ceramists craft your restoration with precision milling and hand-finishing for exact color matching.</p>
+<div class="relative text-center">
+<div class="w-20 h-20 bg-white border-4 border-accent-gold text-accent-gold rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-8 shadow-lg relative z-10">2</div>
+<div class="hidden md:block absolute top-10 left-1/2 w-full border-t-2 border-dashed border-accent-gold/30 -z-0"></div>
+<h4 class="text-xl font-bold text-primary mb-4">Precision Placement</h4>
+<p class="text-primary/70">Using guided surgery, the implant is placed with microscopic accuracy in a single, painless visit.</p>
 </div>
 <!-- Step 3 -->
-<div class="relative flex flex-col items-center text-center px-8">
-<div class="w-24 h-24 rounded-full bg-accent text-primary flex items-center justify-center text-3xl font-black mb-8 relative z-10 shadow-[0_0_30px_rgba(36,185,215,0.3)]">
-                        03
-                    </div>
-<h4 class="text-xl font-bold mb-4">Fitting</h4>
-<p class="text-gray-300 text-sm">Final placement with advanced bonding techniques, ensuring optimal comfort, bite alignment, and aesthetics.</p>
+<div class="relative text-center">
+<div class="w-20 h-20 bg-white border-4 border-accent-gold text-accent-gold rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-8 shadow-lg relative z-10">3</div>
+<h4 class="text-xl font-bold text-primary mb-4">The Final Smile</h4>
+<p class="text-primary/70">After healing, a custom-crafted porcelain crown is attached, looking and feeling exactly like a natural tooth.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Transformation Gallery -->
-<section class="py-24 bg-white dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-<div>
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Transformation Gallery</h2>
-<h3 class="text-4xl font-extrabold">Real Results, Real Smiles</h3>
+<!-- Benefits Grid Section -->
+<section class="py-20 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-6 md:px-20">
+<div class="flex flex-col md:flex-row gap-12 items-end mb-16">
+<div class="flex-1">
+<h2 class="text-4xl font-extrabold mb-4 tracking-tight">Why Choose Dental Implants?</h2>
+<p class="text-white/70">The gold standard in tooth replacement, offering lifetime benefits.</p>
 </div>
-<button class="text-primary dark:text-white font-bold flex items-center gap-2 border-b-2 border-accent pb-1">
-                    View Full Gallery <span class="material-symbols-outlined">trending_flat</span>
-</button>
+<div class="flex-none">
+<button class="bg-accent-gold text-primary px-6 py-3 rounded-lg font-bold">Download Patient Guide</button>
 </div>
-<div class="grid md:grid-cols-2 gap-10">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-accent-teal text-4xl mb-6">face</span>
+<h4 class="text-lg font-bold mb-3">Natural Look &amp; Feel</h4>
+<p class="text-white/60 text-sm">Engineered to match your existing teeth in color, shape, and function.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-accent-teal text-4xl mb-6">all_inclusive</span>
+<h4 class="text-lg font-bold mb-3">Permanent Solution</h4>
+<p class="text-white/60 text-sm">Unlike dentures, implants are fixed and can last a lifetime with proper care.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-accent-teal text-4xl mb-6">restaurant</span>
+<h4 class="text-lg font-bold mb-3">Improved Chewing</h4>
+<p class="text-white/60 text-sm">Restore 100% of your bite force and enjoy all your favorite foods again.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-accent-teal text-4xl mb-6">health_metrics</span>
+<h4 class="text-lg font-bold mb-3">Bone Health</h4>
+<p class="text-white/60 text-sm">Prevents bone loss by stimulating the jaw, maintaining your facial structure.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Smile Transformations Gallery -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 md:px-20">
+<div class="text-center mb-16">
+<h2 class="text-primary text-4xl font-extrabold mb-4 tracking-tight">Smile Transformations</h2>
+<p class="text-primary/60">Real results from Dr. Alaap Shah's patients.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 <div class="space-y-4">
-<div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden shadow-lg group">
-<div class="relative">
-<img class="w-full h-full object-cover" data-alt="Before dental bridge treatment showing missing teeth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwDgNjMWo0WB6pHWFXsvj4iqLja-2Y97k5MyTC0d2Z5nvEUiLPaRez-Gc2Ohmct4f6CCRfdP7t6udhS3BDLdeitX08LfV8UiGYjhQKZTblORstW_fRsslDTlXPj-ZY6Lr7-FlydFyie7o8SfxY13o4OasatLEXo3iI6Whqs89AUFNvDLQ1brPtzDZU2VTa4YCnt-hOSNqNvysnB662jGm-yVJPuT6WFvzxsp6guQOL0-FbCAfSHLiOcrW4dSXXtD7RxgLp592s4w"/>
-<span class="absolute top-4 left-4 bg-black/50 text-white text-[10px] font-bold px-2 py-1 rounded">BEFORE</span>
+<div class="relative overflow-hidden rounded-2xl shadow-lg border border-primary/10">
+<img alt="Before After Case 1" class="w-full h-[400px] object-cover" data-alt="Close up of perfect white dental smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1kOtXllNuioOEAko3vkoC6FjGk0HgnT7_2cZN-EK9Lj2ORuNfMRD5WZlead6Gylx33xJpuuveg5L5PGPzdYeei2dKWBIA-MiXrmqjplhX4YTCMch3Nu3ff49yk-_4nBvR0X5T62GdBgptc1SzCfdxFHgUiAtdu3Hyc--dvgchH4z45G54bIpPDQ57EhcoR6VV2_LPrp5S7hY36twD8RF4pp2TOcy1dUPVnObbw5VZHUi8o_AEDEJT_SMFE8ynYJMyHxd4u3yjRA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<span class="bg-accent-teal text-white px-4 py-1 rounded-full text-sm font-bold">Case Study: Full Arch Replacement</span>
 </div>
-<div class="relative">
-<img class="w-full h-full object-cover" data-alt="After dental bridge treatment showing perfect smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQzR-bw32eSaqF4ZXoLYOxwWPfZ3nEL8e26PlUho7pM_wzSi7KaiatQJrc6KunjXIwXxFbNRAh2ADSJvMqvUGXLDPJyRx-RkKdaic_S2skERsUAMRb6UbVCqe3eHdvGLFCeUSp69yystmuQJuPxewNkJ2LdLlU9yU0LDhqD4lDIzxAt7y83A9SL1LrXsDSdhWQfbnJeCU_Gj9g2BjxLNPauWg-EkOuSJ1yvmD77LbYNiXL4QFsVPeZulY-EEaMwY-WBPE1VGr_Kw"/>
-<span class="absolute top-4 left-4 bg-accent text-primary text-[10px] font-bold px-2 py-1 rounded">AFTER</span>
-</div>
-</div>
-<div class="flex justify-between items-center">
-<p class="font-bold">Anterior Bridge Restoration</p>
-<p class="text-sm text-gray-400 italic">2 Appointments</p>
 </div>
 </div>
 <div class="space-y-4">
-<div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden shadow-lg">
-<div class="relative">
-<img class="w-full h-full object-cover" data-alt="Before dental crown treatment showing fractured tooth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnLg0xQxmIjuH9G_QRrmrOLZnx5DOZOuW__4mSUXlLc_KY0dE1wmWjZRbkaQfh5s80gAPJDR2bEUXceFI7FcwlLMee4QgYngbcl9LXG9dtaQDJvtK4oDkxn9mWJ6yTlweUN9MJDBRvB7h2FzRzzUm4JYe05j2nby2G_4vFRBUbF67iGBe-Wg2d7QM6O0rlt7uuSSPKWg8S4IiESHUBkC2DjlyY3hR5-RO0Tyd8_PmrgWhFz4z5NxFRyawx6178n6V6H_NlFNNg1w"/>
-<span class="absolute top-4 left-4 bg-black/50 text-white text-[10px] font-bold px-2 py-1 rounded">BEFORE</span>
+<div class="relative overflow-hidden rounded-2xl shadow-lg border border-primary/10">
+<img alt="Before After Case 2" class="w-full h-[400px] object-cover" data-alt="Man smiling with perfect white teeth teeth implants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtjXqNEkB1ZkzAtoGFMZlFRZaeQtOMqBgeUwIEf-rWFRCPn-zItMxJm1BuwGJ8EWuszCDl0pqmFRpqdsThVOGbiKgTCC4vOEpmk3QZ0RXlge9YdnvZVCz0SfwEuP6MfqCmWgKAQu6vQ0KaTKlxKt4vN17KpaNy2l6FZT0pVnQQSoFvxfS3rm4DK8bQjUaO7-ZiaAx0XeTed3NS9S3U_5M7qAylKdP9VM0QWbQ8zRmmYdhQX3r6OLQHPPq3r50IvS7RjYle7yqNHg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<span class="bg-accent-teal text-white px-4 py-1 rounded-full text-sm font-bold">Case Study: Single Front Tooth</span>
 </div>
-<div class="relative">
-<img class="w-full h-full object-cover" data-alt="After dental crown treatment showing restored molar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSEds9e9z0TnuO-bgGiSkIOxZ_KDgHywC9UB_pKc0hAfTkhjky0HOjiCECl2vf0j42wzicG9D4BwND0EDrhGahVlY9z2n5HazV45TsXmBhepmgOI-EzTOEbypl32VQjFk8cCuMzuSLnJrvsrfVDP-AYr-m61SzYTClvRNb6PyYhPnfd8zPvu5S-6GVwqfVr7S8S_oq4YzOhUz3V_4hkMffP7keMDYpkO6Wlqy0iJQNMLTKC9BaDq6W_ct5XA8tWbXcU1hUI7JcVA"/>
-<span class="absolute top-4 left-4 bg-accent text-primary text-[10px] font-bold px-2 py-1 rounded">AFTER</span>
-</div>
-</div>
-<div class="flex justify-between items-center">
-<p class="font-bold">Ceramic Crown Reconstruction</p>
-<p class="text-sm text-gray-400 italic">Single Crown Case</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- FAQ Section -->
-<section class="py-24 bg-background-light dark:bg-primary/5">
+<section class="py-24 bg-background-light">
 <div class="max-w-4xl mx-auto px-6">
 <div class="text-center mb-16">
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Common Questions</h2>
-<h3 class="text-4xl font-extrabold">Everything You Need to Know</h3>
+<h2 class="text-primary text-4xl font-extrabold mb-4 tracking-tight">Frequently Asked Questions</h2>
+<p class="text-primary/60">Everything you need to know about the procedure.</p>
 </div>
 <div class="space-y-4">
-<!-- FAQ 1 -->
-<div class="bg-white dark:bg-primary/20 rounded-xl border border-gray-100 dark:border-primary/20 overflow-hidden">
-<button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group">
-<span class="font-bold text-lg">How long do dental crowns and bridges typically last?</span>
-<span class="material-symbols-outlined text-accent group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-8 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed">
-                        With proper oral hygiene and regular professional cleanings, a high-quality crown or bridge can last 10-15 years, and often much longer. We use medical-grade Zirconia and E-max ceramics known for their incredible longevity.
+<details class="group bg-white rounded-xl border border-primary/10 open:border-accent-teal" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h4 class="text-lg font-bold text-primary">How much do dental implants cost?</h4>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-primary/70 leading-relaxed">
+                        The cost of a dental implant varies based on your specific needs, such as the number of teeth being replaced and if any preparatory treatments are required. We offer transparent pricing and flexible financing plans starting at $199/month.
                     </div>
-</div>
-<!-- FAQ 2 -->
-<div class="bg-white dark:bg-primary/20 rounded-xl border border-gray-100 dark:border-primary/20 overflow-hidden">
-<button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group">
-<span class="font-bold text-lg">Is the procedure painful?</span>
-<span class="material-symbols-outlined text-accent group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-8 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed">
-                        Not at all. We use advanced local anesthesia to ensure you are completely comfortable during the preparation phase. Most patients report only mild sensitivity for a day or two after the procedure.
+</details>
+<details class="group bg-white rounded-xl border border-primary/10 open:border-accent-teal">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h4 class="text-lg font-bold text-primary">Is the procedure painful?</h4>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-primary/70 leading-relaxed">
+                        With advanced local anesthesia and our laser technology, most patients report very little to no discomfort during the procedure. We also offer sedation options for patients with dental anxiety.
                     </div>
-</div>
-<!-- FAQ 3 -->
-<div class="bg-white dark:bg-primary/20 rounded-xl border border-gray-100 dark:border-primary/20 overflow-hidden">
-<button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group">
-<span class="font-bold text-lg">Zirconia vs. Ceramic: Which is right for me?</span>
-<span class="material-symbols-outlined text-accent group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-8 pb-6 text-gray-500 dark:text-gray-400 leading-relaxed">
-                        Zirconia is exceptionally strong and ideal for molars that endure heavy chewing forces. E-max ceramic offers superior translucency, making it the perfect choice for front teeth where aesthetics are the primary concern. Our dentists will recommend the best material for your specific case.
+</details>
+<details class="group bg-white rounded-xl border border-primary/10 open:border-accent-teal">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h4 class="text-lg font-bold text-primary">How long does the entire process take?</h4>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-primary/70 leading-relaxed">
+                        The surgical placement usually takes about 60-90 minutes. However, the full process including osseointegration (healing time) can take between 3 to 6 months to ensure the implant is permanently fused to your jawbone before the final crown is placed.
                     </div>
-</div>
+</details>
 </div>
 </div>
 </section>
-<!-- Footer Inquiry Form -->
-<section class="py-24 bg-primary text-white">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-16">
-<div>
-<h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Get in Touch</h2>
-<h3 class="text-4xl font-extrabold mb-8">Request a Personal Consultation</h3>
-<p class="text-gray-400 mb-10 text-lg">Ready to transform your smile? Fill out the form below, and our patient care coordinator will contact you within 24 hours.</p>
-<div class="space-y-6">
+<!-- Contact CTA Section -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 md:px-20">
+<div class="bg-primary rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+<div class="flex-1 p-12 lg:p-20 text-white flex flex-col justify-center">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Start Your Journey to a New Smile</h2>
+<p class="text-white/70 text-lg mb-10 leading-relaxed">
+                        Book a complimentary consultation with Dr. Alaap Shah and find out how dental implants can change your life.
+                    </p>
+<div class="space-y-4">
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center text-accent">
-<span class="material-symbols-outlined">call</span>
-</div>
-<div>
-<p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Phone</p>
-<p class="font-bold text-lg">+1 (555) 000-1234</p>
-</div>
+<span class="material-symbols-outlined text-accent-gold">call</span>
+<span class="text-xl font-bold">+1 (555) 0123 4567</span>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center text-accent">
-<span class="material-symbols-outlined">location_on</span>
-</div>
-<div>
-<p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Location</p>
-<p class="font-bold text-lg" data-location="New York City">450 Medical Plaza, NY</p>
+<span class="material-symbols-outlined text-accent-gold">mail</span>
+<span class="text-lg">hello@ivoriesclinic.com</span>
 </div>
 </div>
 </div>
-</div>
-<div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+<div class="flex-1 bg-white/5 p-12 lg:p-20 border-l border-white/10">
 <form class="space-y-6">
-<div class="grid md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div>
-<label class="block text-xs font-bold uppercase tracking-widest mb-2 text-accent">Full Name</label>
-<input class="w-full bg-primary/40 border-white/10 rounded-lg py-3 focus:ring-accent focus:border-accent text-white" placeholder="John Doe" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-bold uppercase tracking-widest mb-2 text-accent">Email Address</label>
-<input class="w-full bg-primary/40 border-white/10 rounded-lg py-3 focus:ring-accent focus:border-accent text-white" placeholder="john@example.com" type="email"/>
-</div>
+<label class="block text-white/60 text-sm font-bold mb-2">First Name</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-accent-teal focus:ring-1 focus:ring-accent-teal outline-none transition-all" type="text"/>
 </div>
 <div>
-<label class="block text-xs font-bold uppercase tracking-widest mb-2 text-accent">Service Interested In</label>
-<select class="w-full bg-primary/40 border-white/10 rounded-lg py-3 focus:ring-accent focus:border-accent text-white">
-<option>Dental Crowns</option>
-<option>Dental Bridges</option>
-<option>Full Mouth Reconstruction</option>
-<option>Consultation</option>
-</select>
+<label class="block text-white/60 text-sm font-bold mb-2">Last Name</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-accent-teal focus:ring-1 focus:ring-accent-teal outline-none transition-all" type="text"/>
+</div>
 </div>
 <div>
-<label class="block text-xs font-bold uppercase tracking-widest mb-2 text-accent">Message</label>
-<textarea class="w-full bg-primary/40 border-white/10 rounded-lg py-3 focus:ring-accent focus:border-accent text-white" placeholder="Tell us about your dental goals..." rows="4"></textarea>
+<label class="block text-white/60 text-sm font-bold mb-2">Email Address</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-accent-teal focus:ring-1 focus:ring-accent-teal outline-none transition-all" type="email"/>
 </div>
-<button class="w-full bg-accent hover:bg-white hover:text-primary text-primary font-bold py-4 rounded-lg transition-all uppercase tracking-widest shadow-xl shadow-accent/20">
-                            Submit Inquiry
+<div>
+<label class="block text-white/60 text-sm font-bold mb-2">Preferred Date</label>
+<input class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:border-accent-teal focus:ring-1 focus:ring-accent-teal outline-none transition-all" type="date"/>
+</div>
+<button class="w-full bg-accent-teal hover:bg-accent-teal/90 text-white font-black py-4 rounded-xl text-lg transition-all shadow-xl shadow-accent-teal/20">
+                            Book My Consultation
                         </button>
 </form>
 </div>
 </div>
 </div>
 </section>
-<!-- Site Footer -->
-<footer class="bg-primary/95 border-t border-white/5 py-12 text-center">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col items-center gap-6">
-<div class="flex items-center gap-2">
-<div class="text-accent">
-<span class="material-symbols-outlined text-3xl">dentistry</span>
+<!-- Footer -->
+<footer class="bg-background-light py-20 border-t border-primary/5">
+<div class="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="text-accent-teal">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
 </div>
-<h2 class="text-xl font-extrabold text-white tracking-tight">Ivories <span class="text-accent font-light">Clinic</span></h2>
+<h2 class="text-primary text-xl font-extrabold tracking-tight">IVORIES</h2>
 </div>
-<div class="flex gap-8 text-sm text-gray-500 uppercase tracking-widest font-semibold">
-<a class="hover:text-accent" href="#">Privacy Policy</a>
-<a class="hover:text-accent" href="#">Terms of Service</a>
-<a class="hover:text-accent" href="#">Patient Portal</a>
+<p class="text-primary/60 text-sm leading-relaxed">
+                    Premium dental care with a focus on advanced technology and patient comfort. Led by Dr. Alaap Shah.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-teal hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">language</span></a>
+<a class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-teal hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">camera</span></a>
 </div>
-<p class="text-gray-600 text-xs mt-4 italic">© 2024 Ivories Dental Clinic. Excellence in Restorative Dentistry.</p>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-6">Treatments</h4>
+<ul class="space-y-4 text-sm text-primary/60">
+<li><a class="hover:text-accent-teal" href="#">Dental Implants</a></li>
+<li><a class="hover:text-accent-teal" href="#">Porcelain Veneers</a></li>
+<li><a class="hover:text-accent-teal" href="#">Invisalign</a></li>
+<li><a class="hover:text-accent-teal" href="#">Teeth Whitening</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-6">Clinic</h4>
+<ul class="space-y-4 text-sm text-primary/60">
+<li><a class="hover:text-accent-teal" href="#">About Dr. Shah</a></li>
+<li><a class="hover:text-accent-teal" href="#">Our Technology</a></li>
+<li><a class="hover:text-accent-teal" href="#">Patient Journey</a></li>
+<li><a class="hover:text-accent-teal" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-6">Visit Us</h4>
+<p class="text-sm text-primary/60 leading-relaxed mb-4">
+                    123 Smile Boulevard,<br/>
+                    Dental District, CA 90210
+                </p>
+<div class="rounded-lg overflow-hidden h-32 border border-primary/10">
+<div class="w-full h-full bg-gray-200 bg-[url('https://placeholder.pics/svg/300')]" data-location="California" style=""></div>
 </div>
 </div>
+</div>
+<div class="max-w-7xl mx-auto px-6 md:px-20 pt-12 mt-12 border-t border-primary/5 text-center text-sm text-primary/40">
+            © 2024 Ivories Dental Clinic. All Rights Reserved. Designed for Excellence.
+        </div>
 </footer>
 </body></html>

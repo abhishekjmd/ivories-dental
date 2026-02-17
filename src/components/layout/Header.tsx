@@ -12,7 +12,7 @@ const treatmentItems = [
   },
   { label: "Teeth Removal", href: "/treatments/teeth-removal" },
   { label: "Crown and Bridges", href: "/treatments/crowns-bridges" },
-  { label: "Dental Implants", href: "#" },
+  { label: "Dental Implants", href: "/treatments/dental-implant" },
 ];
 
 export default function Header() {
