@@ -3,310 +3,320 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | Ivories Dental Clinic Ahmedabad</title>
+<title>Book Appointment | SmileCraft Advanced Dental Clinic</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0B1F3A", // Deep Navy
-                        "teal-brand": "#24B9D7",
-                        "gold-accent": "#D4AF37",
-                        "background-light": "#F8FAFC",
-                        "background-dark": "#0B1F3A",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"],
-                        "serif": ["Playfair Display", "serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "full": "9999px"
-                    },
-                },
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0B1F3A",
+                "accent-gold": "#C6A75E",
+                "background-light": "#F7F6F8",
+                "background-dark": "#181220",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"],
+                "serif": ["Playfair Display", "serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
             },
+          },
         }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .bg-mesh {
-            background-color: #ffffff;
-            background-image: radial-gradient(at 0% 0%, rgba(36, 185, 215, 0.05) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(11, 31, 58, 0.05) 0px, transparent 50%);
-        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-display { font-family: 'Manrope', sans-serif; }
     </style>
 </head>
-<body class="font-display bg-white text-primary antialiased">
-<!-- Sticky Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/90 backdrop-blur-md">
-<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+<body class="bg-background-light dark:bg-background-dark font-display text-primary transition-colors duration-300">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 py-4 lg:px-20">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-teal-brand">
-<span class="material-symbols-outlined text-3xl">dentistry</span>
+<div class="bg-primary p-2 rounded-lg text-accent-gold">
+<span class="material-symbols-outlined text-2xl">dentistry</span>
 </div>
-<h1 class="text-xl font-extrabold tracking-tight text-primary">IVORIES <span class="text-teal-brand">DENTAL</span></h1>
+<div>
+<h1 class="font-serif text-xl font-bold tracking-tight text-primary uppercase">SmileCraft</h1>
+<p class="text-[10px] tracking-[0.2em] font-bold text-accent-gold uppercase -mt-1">Advanced Dental</p>
 </div>
-<nav class="hidden items-center gap-8 md:flex">
-<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Home</a>
-<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Services</a>
-<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">About</a>
-<a class="text-sm font-semibold text-primary/70 hover:text-teal-brand transition-colors" href="#">Cases</a>
-<a class="text-sm font-semibold text-teal-brand" href="#">Contact</a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Our Services</a>
+<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Specialists</a>
+<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Patient Care</a>
+<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Contact</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden rounded-full border border-teal-brand px-5 py-2 text-sm font-bold text-teal-brand transition-all hover:bg-teal-brand hover:text-white lg:block">
-                    Patient Portal
-                </button>
-<button class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-teal-brand active:scale-95">
-                    Book Appointment
-                </button>
+<button class="hidden sm:block text-primary font-bold text-sm underline decoration-accent-gold underline-offset-4">Patient Portal</button>
+<div class="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center border border-primary/10">
+<span class="material-symbols-outlined text-primary/60">person</span>
+</div>
 </div>
 </div>
 </header>
-<main>
-<!-- Section 1: Hero Section -->
-<section class="bg-mesh relative overflow-hidden py-20 lg:py-32">
-<div class="mx-auto max-w-7xl px-6 text-center lg:px-10">
-<span class="mb-4 inline-block rounded-full bg-teal-brand/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-teal-brand">World-Class Care</span>
-<h2 class="font-serif text-5xl font-medium leading-tight text-primary lg:text-7xl">
-                    Get in Touch with <br/><span class="italic text-teal-brand">Our Experts</span>
-</h2>
-<p class="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:text-xl">
-                    Whether you have a question or are ready to schedule your consultation, we're here to help you achieve your perfect smile with precision and luxury care.
-                </p>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[300px] w-full flex items-center justify-center bg-primary overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img alt="Modern dental clinic interior" class="w-full h-full object-cover" data-alt="Modern high-end dental clinic interior with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpA-KI8wpE2puC4z6vjyH2GzYVSmzMtu23wVYXAHp4rlHtiAlpTTEOsLRiFsHEpZC4kNVEXyFkasEmeZVZJuO3qi-F93HrGMqZwiUZV6bBnB6J-UPs4u8AjZIPRPKGAZb8M4od4yIkv_HTlQsgX0cUKX5fFOzPMfp08twaoG9GaDNjYKMcZb6YaIyDx9ZdY4Gxwi9QlupmTT81mPXYH5QGXDdKz80pj2W_paWpvCk8AMahJwAMMJj1ED0EcAIce-wNPEiTAasFwg"/>
 </div>
-<!-- Decorative Element -->
-<div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-teal-brand/5 blur-3xl"></div>
-<div class="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-primary/5 blur-3xl"></div>
-</section>
-<!-- Section 2: Contact Information Grid -->
-<section class="relative z-10 -mt-16 px-6 lg:px-10">
-<div class="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
-<!-- Address Card -->
-<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
-<span class="material-symbols-outlined text-3xl">location_on</span>
-</div>
-<h3 class="mb-3 text-xl font-bold">Visit Our Clinic</h3>
-<p class="mb-6 flex-grow text-sm leading-relaxed text-slate-500">
-                        302, 303, 304 Maulik Arcade, Opposite Mansi Tower, Above Karnavati Pagarkha Bazaar, Vastrapur, Ahmedabad, Gujarat 380015
-                    </p>
-<a class="inline-flex items-center font-bold text-teal-brand hover:underline" href="#">
-                        Get Directions
-                        <span class="material-symbols-outlined ml-1 text-sm">arrow_outward</span>
-</a>
-</div>
-<!-- Phone Card -->
-<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
-<span class="material-symbols-outlined text-3xl">call</span>
-</div>
-<h3 class="mb-3 text-xl font-bold">Call or Message Us</h3>
-<div class="mb-6 space-y-2">
-<p class="text-sm font-medium text-slate-700">Phone: <span class="text-primary font-bold">+91 79 48000766</span></p>
-<p class="text-sm font-medium text-slate-700">WhatsApp: <span class="text-primary font-bold">+91 9879936039</span></p>
-</div>
-<a class="inline-flex items-center font-bold text-teal-brand hover:underline" href="tel:+917948000766">
-                        Call Now
-                        <span class="material-symbols-outlined ml-1 text-sm">chevron_right</span>
-</a>
-</div>
-<!-- Email Card -->
-<div class="group flex flex-col rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-50 transition-all hover:-translate-y-1">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white group-hover:bg-teal-brand transition-colors">
-<span class="material-symbols-outlined text-3xl">mail</span>
-</div>
-<h3 class="mb-3 text-xl font-bold">Email Our Team</h3>
-<p class="mb-6 flex-grow text-sm leading-relaxed text-slate-500">
-                        For general inquiries, corporate tie-ups, or support, reach out via email and we'll respond within 24 hours.
-                    </p>
-<a class="inline-flex items-center font-bold text-teal-brand hover:underline truncate" href="mailto:ivoriesdentalclinic@gmail.com">
-                        ivoriesdentalclinic@gmail.com
-                    </a>
-</div>
+<div class="relative z-10 text-center px-4">
+<h2 class="font-serif text-4xl md:text-5xl text-white mb-4">Book Your Transformation</h2>
+<p class="text-accent-gold font-medium tracking-widest uppercase text-sm">Concierge Dental Care Scheduling</p>
 </div>
 </section>
-<!-- Section 3: Inquiry Form & Interactive Map -->
-<section class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-<div class="grid gap-12 lg:grid-cols-2 lg:items-start">
-<!-- Left Side: Form -->
-<div class="rounded-3xl bg-slate-50 p-8 lg:p-12">
-<h3 class="mb-2 text-3xl font-bold text-primary">Send Us a Message</h3>
-<p class="mb-10 text-slate-500">Please fill out the form below and our patient coordinator will contact you shortly.</p>
-<form action="#" class="space-y-6">
-<div class="grid gap-6 md:grid-cols-2">
+<!-- Main Booking Content -->
+<div class="max-w-7xl mx-auto px-6 -mt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Sidebar: Trust Points -->
+<aside class="lg:col-span-4 order-2 lg:order-1">
+<div class="sticky top-28 space-y-6">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-primary/5">
+<h3 class="font-serif text-2xl text-primary mb-6">Why SmileCraft?</h3>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">ISO 9001 Certified</h4>
+<p class="text-sm text-primary/60 leading-relaxed">International standards for sterilization and patient safety protocols.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
+<span class="material-symbols-outlined text-2xl">sentiment_satisfied</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Painless Procedures</h4>
+<p class="text-sm text-primary/60 leading-relaxed">Advanced laser and sedation options for a stress-free experience.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Expert Specialists</h4>
+<p class="text-sm text-primary/60 leading-relaxed">A team of specialists with 15+ years of clinical excellence.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary p-8 rounded-xl text-white">
+<h4 class="font-serif text-xl mb-2">Emergency?</h4>
+<p class="text-sm text-white/70 mb-4">Immediate pain relief appointments available within 2 hours.</p>
+<a class="flex items-center gap-2 font-bold text-accent-gold hover:text-white transition-colors" href="tel:1800SMILE">
+<span class="material-symbols-outlined">call</span>
+                            Call 1-800-SMILE-DR
+                        </a>
+</div>
+</div>
+</aside>
+<!-- Multi-Step Form Container -->
+<section class="lg:col-span-8 order-1 lg:order-2">
+<div class="bg-white rounded-xl shadow-xl border border-primary/5 overflow-hidden">
+<!-- Progress Bar -->
+<div class="bg-primary/5 border-b border-primary/10 px-8 py-4 flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="h-6 w-6 rounded-full bg-primary text-white text-[10px] flex items-center justify-center font-bold">1</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Details</span>
+</div>
+<div class="h-px w-8 bg-primary/20"></div>
+<div class="flex items-center gap-2 opacity-40">
+<span class="h-6 w-6 rounded-full bg-primary/20 text-primary text-[10px] flex items-center justify-center font-bold">2</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Treatment</span>
+</div>
+<div class="h-px w-8 bg-primary/20"></div>
+<div class="flex items-center gap-2 opacity-40">
+<span class="h-6 w-6 rounded-full bg-primary/20 text-primary text-[10px] flex items-center justify-center font-bold">3</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Schedule</span>
+</div>
+</div>
+<span class="text-xs font-bold text-accent-gold">Step 1 of 3</span>
+</div>
+<div class="p-8 md:p-12">
+<form class="space-y-8">
+<!-- Step 1: Personal Info -->
+<div class="space-y-6">
+<h3 class="font-serif text-2xl text-primary">Patient Information</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Full Name</label>
-<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="John Doe" type="text"/>
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Full Name</label>
+<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="John Doe" type="text"/>
 </div>
 <div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Email Address</label>
-<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="john@example.com" type="email"/>
-</div>
-</div>
-<div class="grid gap-6 md:grid-cols-2">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Phone Number</label>
-<input class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="+91 00000 00000" type="tel"/>
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Email Address</label>
+<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="john@example.com" type="email"/>
 </div>
 <div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Service of Interest</label>
-<select class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all">
-<option>General Checkup</option>
-<option>Dental Implants</option>
-<option>Orthodontics (Braces/Aligners)</option>
-<option>Teeth Whitening</option>
-<option>Cosmetic Dentistry</option>
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Phone Number</label>
+<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Patient Type</label>
+<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5">
+<option>New Patient</option>
+<option>Returning Patient</option>
 </select>
 </div>
 </div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-wider text-slate-400">Your Message</label>
-<textarea class="w-full rounded-xl border-slate-200 bg-white p-4 text-sm focus:border-teal-brand focus:ring-teal-brand/20 transition-all" placeholder="How can we help you?" rows="4"></textarea>
 </div>
-<button class="w-full rounded-xl bg-teal-brand py-4 text-sm font-bold text-white shadow-lg shadow-teal-brand/20 transition-all hover:bg-primary active:scale-95" type="submit">
-                            Send Inquiry
-                        </button>
+<!-- Step 2: Service Selection -->
+<div class="space-y-6 pt-8 border-t border-primary/10">
+<h3 class="font-serif text-2xl text-primary">Treatment &amp; Doctor</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Select Service</label>
+<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 font-medium">
+<option disabled="" selected="">Choose a procedure...</option>
+<option>Smile Makeover (Cosmetic)</option>
+<option>Dental Implants</option>
+<option>Root Canal Therapy</option>
+<option>Professional Cleaning</option>
+<option>Orthodontics (Invisalign)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Preferred Doctor</label>
+<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 font-medium">
+<option>First Available Specialist</option>
+<option>Dr. Sarah Harrington (Implantology)</option>
+<option>Dr. Marcus Vane (Orthodontics)</option>
+<option>Dr. Elena Kozlov (General Dentistry)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Step 3: Scheduling -->
+<div class="space-y-6 pt-8 border-t border-primary/10">
+<h3 class="font-serif text-2xl text-primary">Availability</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Preferred Date</label>
+<div class="relative">
+<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5" type="date"/>
+</div>
+</div>
+<div class="space-y-4">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Available Time Slots</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">09:00 AM</button>
+<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">10:30 AM</button>
+<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">11:45 AM</button>
+<button class="py-2 text-xs font-bold bg-accent-gold text-white rounded-md" type="button">02:15 PM</button>
+<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">04:00 PM</button>
+<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">05:30 PM</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Final Button -->
+<div class="pt-10 flex flex-col items-center">
+<button class="w-full md:w-auto min-w-[300px] bg-accent-gold hover:bg-accent-gold/90 text-primary font-bold py-5 px-10 rounded-lg transition-all shadow-lg hover:shadow-accent-gold/20 flex items-center justify-center gap-3 group" type="submit">
+<span>CONFIRM APPOINTMENT</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">calendar_today</span>
+</button>
+<p class="mt-4 text-[10px] text-primary/40 uppercase tracking-widest">By clicking confirm, you agree to our booking terms and conditions.</p>
+</div>
 </form>
 </div>
-<!-- Right Side: Map -->
-<div class="h-full min-h-[500px] overflow-hidden rounded-3xl bg-slate-100 shadow-inner">
-<div class="relative h-full w-full">
-<img alt="Map showing Vastrapur area Ahmedabad" class="h-full w-full object-cover grayscale opacity-80 brightness-90" data-alt="Detailed map of Vastrapur and Satellite area in Ahmedabad" data-location="Ahmedabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQtCYGfvdD-YbxzZZX9jzfm9Q5fPhJQ2gfpUX8ML3DCPig2hOLByWj44T6SOeT5UrWTpcBzCWNWz4HsadTFHBhKDg_BoPrsLiTge9eDlAA-dkE__PD4dRHjrZ3qq0BM9zni0sexjHcvScqDV3YYKvOl0-CexP7wE8agL2Z3tr55FTJjGsGroDzgWPQe4Y0RarYrHCNLPq6zS83vP3-thExCLVb8R19rM2-G3_0Z3DfLADsfhlaMo7Xp2znQ9l6R6Bd2BksbzMww"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="flex h-16 w-16 animate-pulse items-center justify-center rounded-full bg-teal-brand/20">
-<div class="flex h-8 w-8 items-center justify-center rounded-full bg-teal-brand text-white shadow-lg">
-<span class="material-symbols-outlined text-lg">location_on</span>
 </div>
+<!-- FAQ Section Below Form -->
+<div class="mt-16 space-y-8">
+<h3 class="font-serif text-3xl text-primary text-center">Frequently Asked Questions</h3>
+<div class="space-y-4">
+<div class="bg-white rounded-lg border border-primary/10 p-6">
+<button class="w-full flex items-center justify-between group">
+<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">What should I bring to my first visit?</span>
+<span class="material-symbols-outlined text-accent-gold">add</span>
+</button>
+<div class="mt-4 text-primary/60 text-sm leading-relaxed">
+                                Please bring a valid ID, your insurance card (if applicable), and any previous dental records or X-rays from the last 6 months. We also recommend arriving 10 minutes early to complete initial paperwork.
+                            </div>
 </div>
+<div class="bg-white rounded-lg border border-primary/10 p-6">
+<button class="w-full flex items-center justify-between group">
+<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">Do you offer flexible payment plans?</span>
+<span class="material-symbols-outlined text-accent-gold">add</span>
+</button>
 </div>
-<div class="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 backdrop-blur shadow-xl">
-<div class="flex items-center gap-4">
-<div class="h-12 w-12 shrink-0 rounded-lg bg-primary text-white flex items-center justify-center">
-<span class="material-symbols-outlined">directions</span>
-</div>
-<div>
-<p class="text-xs font-bold uppercase tracking-wider text-teal-brand">Quick Nav</p>
-<p class="text-sm font-bold text-primary">Vastrapur, Ahmedabad</p>
-</div>
-<button class="ml-auto rounded-lg bg-primary px-4 py-2 text-xs font-bold text-white hover:bg-teal-brand transition-colors">Open Maps</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 4: Opening Hours -->
-<section class="bg-background-light py-24">
-<div class="mx-auto max-w-4xl px-6 lg:px-10">
-<div class="text-center mb-16">
-<h3 class="font-serif text-4xl font-medium text-primary">Clinic Hours</h3>
-<div class="mx-auto mt-4 h-1 w-20 bg-gold-accent"></div>
-</div>
-<div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-<table class="w-full text-left">
-<thead class="bg-slate-50">
-<tr>
-<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Day</th>
-<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Timings</th>
-<th class="px-8 py-5 text-sm font-bold uppercase tracking-wider text-slate-500">Status</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-slate-100">
-<tr>
-<td class="px-8 py-5 font-bold text-primary">Monday - Saturday</td>
-<td class="px-8 py-5 text-slate-600">9:30 AM - 8:30 PM</td>
-<td class="px-8 py-5"><span class="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-700">Open</span></td>
-</tr>
-<tr>
-<td class="px-8 py-5 font-bold text-primary">Sunday</td>
-<td class="px-8 py-5 text-slate-600">10:30 AM - 1:30 PM</td>
-<td class="px-8 py-5"><span class="inline-flex items-center rounded-full bg-teal-brand/10 px-2.5 py-0.5 text-xs font-bold text-teal-brand">By Appointment</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p class="mt-6 text-center text-sm text-slate-500 italic">
-                    Note: Clinical timings may vary during public holidays. Please call ahead to confirm.
-                </p>
-</div>
-</section>
-<!-- Section 5: Emergency Care CTA -->
-<section class="mx-auto max-w-7xl px-6 pb-24 lg:px-10">
-<div class="relative overflow-hidden rounded-[2.5rem] bg-primary px-8 py-16 text-center lg:px-20 lg:py-24">
-<!-- Background Pattern -->
-<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#24B9D7 1px, transparent 1px); background-size: 24px 24px;"></div>
-<div class="relative z-10 flex flex-col items-center">
-<div class="mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-teal-brand/20 text-teal-brand">
-<span class="material-symbols-outlined text-5xl">emergency_home</span>
-</div>
-<h3 class="mb-4 text-3xl font-bold text-white lg:text-5xl">Dental Emergency?</h3>
-<p class="mb-10 max-w-xl text-lg text-slate-300">
-                        We prioritize urgent cases. If you're experiencing severe pain or dental trauma, call our 24/7 hotline immediately.
-                    </p>
-<div class="flex flex-col gap-4 sm:flex-row">
-<a class="group flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-extrabold text-primary transition-all hover:bg-teal-brand hover:text-white" href="tel:+919879936039">
-<span class="material-symbols-outlined">call</span>
-                            +91 9879936039
-                        </a>
-<button class="rounded-full border border-white/20 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10">
-                            Emergency Protocols
-                        </button>
+<div class="bg-white rounded-lg border border-primary/10 p-6">
+<button class="w-full flex items-center justify-between group">
+<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">Is parking available at the clinic?</span>
+<span class="material-symbols-outlined text-accent-gold">add</span>
+</button>
 </div>
 </div>
 </div>
 </section>
+</div>
 </main>
-<!-- Footer -->
-<footer class="bg-primary pt-20 pb-10 text-white">
-<div class="mx-auto max-w-7xl px-6 lg:px-10">
-<div class="grid gap-12 lg:grid-cols-4">
-<div class="col-span-2">
-<div class="flex items-center gap-3 mb-8">
-<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-brand text-white">
+<!-- Premium Footer -->
+<footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="bg-accent-gold p-2 rounded-lg text-primary">
 <span class="material-symbols-outlined text-2xl">dentistry</span>
 </div>
-<h2 class="text-xl font-extrabold tracking-tight">IVORIES <span class="text-teal-brand">DENTAL</span></h2>
+<h2 class="font-serif text-xl font-bold tracking-tight text-white uppercase">SmileCraft</h2>
 </div>
-<p class="max-w-md text-slate-400 leading-relaxed">
-                        Redefining dental care through cutting-edge technology and luxury patient experience. Ahmedabad's premier destination for dental implants and aesthetic transformations.
-                    </p>
-<div class="mt-8 flex gap-4">
-<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
-<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
-<a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">thumb_up</span></a>
+<p class="text-sm text-white/60 leading-relaxed">Redefining modern dentistry through innovation, comfort, and clinical excellence. Your smile is our mastercraft.</p>
+<div class="flex gap-4">
+<a class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent-gold hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent-gold hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
 </div>
 </div>
 <div>
-<h4 class="mb-8 text-sm font-bold uppercase tracking-widest text-teal-brand">Treatments</h4>
-<ul class="space-y-4 text-slate-400">
+<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Procedures</h4>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Cosmetic Dentistry</a></li>
 <li><a class="hover:text-white transition-colors" href="#">Dental Implants</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Smile Makeover</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Invisalign®</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Root Canal Treatment</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Teeth Whitening</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Orthodontics</a></li>
 </ul>
 </div>
 <div>
-<h4 class="mb-8 text-sm font-bold uppercase tracking-widest text-teal-brand">Company</h4>
-<ul class="space-y-4 text-slate-400">
+<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Clinic Info</h4>
+<ul class="space-y-4 text-sm text-white/60">
 <li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Meet the Doctors</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Our Doctors</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Patient Stories</a></li>
 <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
 </ul>
 </div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Visit Us</h4>
+<div class="space-y-4 text-sm text-white/60">
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold text-lg">location_on</span>
+                            1200 Dental Plaza, Suite 400<br/>Beverly Hills, CA 90210
+                        </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-gold text-lg">call</span>
+                            (555) 123-4567
+                        </p>
 </div>
-<div class="mt-20 border-t border-white/10 pt-10 text-center text-sm text-slate-500">
-<p>© 2024 Ivories Dental Clinic. All Rights Reserved. Crafted for Excellence.</p>
+</div>
+</div>
+<div class="pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">© 2024 SmileCraft Advanced Dental Clinic. All Rights Reserved.</p>
+<div class="flex items-center gap-6">
+<img alt="ISO Certified Badge" class="opacity-30 h-8 grayscale brightness-200" data-alt="ISO 9001 certification badge logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ_GMrc-x-iQVES6-aGfZKXBXARPMFWu9Lv36XHc7TZv8Z_d7j9BQLtVmTG1wmN1NimZyj_V3kjleMjzEC-f8A1xSfJ2-WcpBC629kwgYUTe7GgatJQYLnBMojkXG9r_aFFlCAmIvUKBdT6fy2wKJrkkYrYhsQsJXeEl4zknCVVio-S0tYCyZdsLMlc83hyNET96pIofWmyW_APi-y8tj_goWvKHcBfRaa5yeY3imr3yraTvk0smPa9GPxrtZniZf6x2jIw1uBzQ"/>
+<img alt="ADA Member Badge" class="opacity-30 h-8 grayscale brightness-200" data-alt="American Dental Association member badge logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD51ExOEB4l_QXXHzc5yuebTx3FsynhxnzZBPNuOubnBYAv6klsiDwDGR-4GOiC1uT0TjrKssgAxZh_CXz6Ms8KIOufEZK3EurRCRm2wiQnfUrGzFdvfG37l0mfyE23dFEbzt34v4C6DB9FLj9qAlZp42yX_hS_O2XeKZ1Uzhg93iZk0UwJmQxXGwE3HeyESvaxqn9ASdfaq2w0cF_8zUCXT8qsOgVZbMV_zXt6OyKWSPQo_EzasdflAiVtOXssiEVeCr_IIGRsow"/>
+</div>
 </div>
 </div>
 </footer>

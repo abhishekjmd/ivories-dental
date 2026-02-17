@@ -125,9 +125,12 @@ export default function Header() {
           </ul>
 
           <div className="flex items-center gap-4">
-            <button className="hidden rounded-lg bg-[#200b3c] px-6 py-3 text-sm font-bold tracking-tight text-white uppercase shadow-lg shadow-[#200b3c]/20 transition-all hover:bg-[#200b3c]/90 md:block">
+            <Link
+              href="/book-appointment"
+              className="hidden rounded-lg bg-[#200b3c] px-6 py-3 text-sm font-bold tracking-tight text-white uppercase shadow-lg shadow-[#200b3c]/20 transition-all hover:bg-[#200b3c]/90 md:block"
+            >
               Make an Appointment
-            </button>
+            </Link>
             <button className="text-[#200b3c] lg:hidden">
               <span className="material-symbols-outlined text-3xl">menu</span>
             </button>
