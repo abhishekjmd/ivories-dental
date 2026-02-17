@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 const treatments = [
   {
     title: "Painfree RCT",
+    href: "/treatments/root-canal-treatment",
     description:
       "Single visit root canal therapy using precision rotary instruments for zero discomfort.",
     image:
@@ -8,6 +11,7 @@ const treatments = [
   },
   {
     title: "Dental Implants",
+    href: "#",
     description:
       "Lifetime solutions for missing teeth using world-class implant systems from Switzerland.",
     image:
@@ -15,6 +19,7 @@ const treatments = [
   },
   {
     title: "Healthy Mouth Plan",
+    href: "#",
     description:
       "Comprehensive oral health assessment and maintenance for the entire family.",
     image:
@@ -22,6 +27,7 @@ const treatments = [
   },
   {
     title: "Cosmetic Veneers",
+    href: "/treatments/smile-designing",
     description:
       "Digital smile designing with ultra-thin porcelain veneers for a Hollywood transformation.",
     image:
@@ -73,15 +79,15 @@ export default function FeaturedTreatments() {
               <p className="text-sm leading-relaxed text-[#200b3c]/60">
                 {item.description}
               </p>
-              <a
+              <Link
                 className="inline-flex items-center gap-2 text-sm font-bold tracking-tighter text-[#24B9D7] uppercase transition-all hover:gap-4"
-                href="#"
+                href={item.href}
               >
                 Learn More
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

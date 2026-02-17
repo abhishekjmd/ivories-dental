@@ -3,9 +3,10 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Teeth Removal &amp; Extractions | Ivories Dental Clinic</title>
+<title>Root Canal Treatment | Ivories Dental Clinic</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -13,9 +14,8 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#0B1F3A", // Deep Navy
-                        "teal-brand": "#24B9D7", // Primary Teal
-                        "gold-accent": "#F7BB00", // Accent Gold
+                        "primary": "#200b3c",
+                        "accent-teal": "#24B9D7",
                         "background-light": "#f7f6f8",
                         "background-dark": "#181220",
                     },
@@ -34,290 +34,341 @@
         }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            font-family: 'Manrope', sans-serif;
-        }
-        h1, h2, h3, .font-serif {
-            font-family: 'Playfair Display', serif;
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
         }
     </style>
 </head>
-<body class="bg-background-light text-primary selection:bg-teal-brand/30">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
+<body class="bg-background-light dark:bg-background-dark font-display text-primary">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full glass-effect border-b border-primary/10 px-6 lg:px-20 py-4 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="text-teal-brand">
-<span class="material-symbols-outlined text-4xl">dentistry</span>
+<div class="size-10 bg-primary flex items-center justify-center rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">dentistry</span>
 </div>
-<h2 class="text-primary text-2xl font-bold tracking-tight">Ivories <span class="text-teal-brand">Dental</span></h2>
+<h2 class="text-primary text-xl font-extrabold tracking-tight">Ivories <span class="text-accent-teal font-light uppercase text-xs block tracking-widest -mt-1">Dental Clinic</span></h2>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-primary/80 hover:text-teal-brand font-medium transition-colors" href="#">Treatments</a>
-<a class="text-primary/80 hover:text-teal-brand font-medium transition-colors" href="#">About Us</a>
-<a class="text-primary/80 hover:text-teal-brand font-medium transition-colors" href="#">Case Studies</a>
-<a class="text-primary/80 hover:text-teal-brand font-medium transition-colors" href="#">Testimonials</a>
-<a class="text-primary/80 hover:text-teal-brand font-medium transition-colors" href="#">Contact</a>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-primary/70 hover:text-primary text-sm font-semibold transition-colors" href="#">Services</a>
+<a class="text-primary/70 hover:text-primary text-sm font-semibold transition-colors" href="#">Technology</a>
+<a class="text-primary/70 hover:text-primary text-sm font-semibold transition-colors" href="#">Patient Care</a>
+<a class="text-primary/70 hover:text-primary text-sm font-semibold transition-colors" href="#">Locations</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold hover:bg-primary/90 transition-all">
-                    Book Consultation
-                </button>
-</div>
+<button class="hidden sm:flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                Book Appointment
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative w-full min-h-[600px] flex items-center overflow-hidden">
+<section class="relative w-full min-h-[85vh] flex items-center overflow-hidden bg-primary/5">
 <div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent z-10"></div>
-<img alt="Modern luxury dental clinic interior" class="w-full h-full object-cover" data-alt="Interior of a luxury modern dental clinic treatment room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuI9kznebwUkbzM4gitie06wPf4oK3ND_FEPPJFM0apyiOpjZmsHLKkqbgvPwJWeQRF0F3a4QTMGb2B82daxzXY0oXQbscvrjUuAsCRIOycmeMSZ22HUeuf6Qrw18HoQN6zM1-H6H7UNx-bPs-sreC28ZiN-W07nlGt7Ujje196VK6V2LWVB15SvZPG5M_Ht-BDRhJd_FN9FF_i253F3KMneeBRpUWLYnqB7HfIX-Phs6oJsST1i2I8D17kkq9LQs-VMYOHx6SNA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background-light via-background-light/80 to-transparent z-10"></div>
+<img alt="Modern Dental Clinic Interior" class="w-full h-full object-cover object-center" data-alt="Modern high-tech dental clinic interior with bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmR5zI9lgKyQrWrES8slvYTsZEoPkkcEM8UUXezIUUPeYmKtkCg5hCAT33tTqq5XOFhYAVpKa8I1Lffg6s0u64nSzqKv79X08Mbmk73OyGWr0e7innfbJNGkbWrDi5eA73goJ4hICbSvWAIKy5awTDns2AfwO5SGQV2ZHFR9brY_gAkM1YfeIW8_j_XKLwbZ1BNl7MJmiqFjaL1aDMotkvePVyd89VU-AOasqkjzlt32kiBkq54EPXYEPhU-FP4uvyy2FTBTsryA"/>
 </div>
-<div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-20 py-20 text-white">
-<div class="max-w-2xl space-y-6">
-<span class="inline-block bg-teal-brand/20 backdrop-blur-sm text-teal-brand px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Premium Oral Surgery</span>
-<h1 class="text-5xl lg:text-7xl font-bold leading-tight">Gentle Teeth Removal &amp; Extractions</h1>
-<p class="text-lg lg:text-xl text-white/80 leading-relaxed font-light">
-                        Experience clinical excellence and unmatched patient comfort. Our advanced sedation options and expert techniques ensure your procedure is entirely pain-free.
+<div class="container mx-auto px-6 lg:px-20 relative z-20">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 rounded-full bg-accent-teal/10 text-accent-teal text-xs font-bold uppercase tracking-widest mb-4">Specialized Endodontics</span>
+<h1 class="font-serif text-5xl md:text-7xl text-primary leading-tight mb-6">
+                        Painless <br/>
+<span class="text-accent-teal italic">Root Canal</span> Treatment
+                    </h1>
+<p class="text-lg text-primary/80 leading-relaxed mb-8 max-w-xl">
+                        Save your natural tooth with expert root canal treatment at Ivories! Using advanced techniques and effective anesthesia, we ensure a safe, efficient, and comfortable experience.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4 pt-4">
-<button class="bg-teal-brand text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-white transition-all">
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform">
                             Book Your Consultation
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white border-2 border-primary/10 text-primary px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center gap-3 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">play_circle</span>
+                            How it works
                         </button>
-<button class="border border-white/30 bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">
-                            View Our Technology
-                        </button>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="flex -space-x-3">
+<img alt="Patient" class="size-10 rounded-full border-2 border-white shadow-sm" data-alt="Satisfied dental patient portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1jAoU_0qn1dIZ7on7FNuTQooIBeH35cukRAel3DS8uOj8fVC2fn78p-d4KTNdPK8kOJpT64aH9e2qo0tqYE2d4bqdTUVMTJd1ROUYjlSq6TCvU3O1HNtCexLPhs9QLadn7o5fKx6Uj7LsI8dvkwLl7UJQu7yon04soo98R0uq1HWv03CVHHv6gkxNc-zO7Ws2haDpbWgnUbFhVtZJi6qqupBiNnKDWsicRCt9QYvoDBmXsVzwmX3kVVIOu5JrR-olgKXeB_Cc4w"/>
+<img alt="Patient" class="size-10 rounded-full border-2 border-white shadow-sm" data-alt="Happy patient after dental treatment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf_85JAs58ARKaVRVnpH_rhC0nCfgcemcS4GlH6j6PsgWgtZG-MnPA00Ml21VIteN1U-te_MBtGnIxO5ymT7W2dwnTnmyfCu4pN3sMndjGlTkUM0A84V62OVeD41vI2qrnMfFEyHmflGUIz2O5j665APO4LDeQOS9g4rukMI88T405nWX-yOxC0-PbGJhdTHE0uYX9o2JIE1xILxz9EE3Qp0YYMpaedWFxQ6xHMCgpU3ft7xpFcgvxdLQ55DI-VST-y8sMX9UTMQ"/>
+<img alt="Patient" class="size-10 rounded-full border-2 border-white shadow-sm" data-alt="Smiling clinic patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkM8hlr5meYkymhgPveD-dcjXfVy19TxH0yum_Liwu6jLQ-kBz_cLoVfoGHm54F0yzWWAQ5iRBaD8kfALzwvIz2YBOg_lmAIbQjw3CcVk59B-0SotIKhDy1ZLcS_r6eG0xvV7bOqmL_AVSkoM-FL-v5ogjm79tH2wFgPNu3lebif1Q_l2iWjwPo9AheUXvDHelLAS15RdKzYiHRUby7U6IolCmw5I6s6ys5YDQ8uFRtIaNbDBmSbiH4tm_wN3yKM08jAKSxJ1pMg"/>
+</div>
+<p class="text-sm font-medium text-primary/60">
+<span class="text-primary font-bold">15,000+</span> Successful Treatments
+                        </p>
 </div>
 </div>
 </div>
 </section>
-<!-- Information Section -->
-<section class="py-24 bg-white">
-<div class="max-w-7xl mx-auto px-6 lg:px-20">
-<div class="text-center mb-16 space-y-4">
-<h2 class="text-4xl lg:text-5xl font-bold text-primary">Why Extraction Might Be Necessary</h2>
-<p class="text-primary/60 max-w-2xl mx-auto text-lg">Our goal is always to save your natural teeth, but sometimes an extraction is the best step for your long-term oral health.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Reason 1 -->
-<div class="group p-8 bg-background-light rounded-xl border border-transparent hover:border-teal-brand/30 hover:bg-white hover:shadow-xl transition-all duration-300">
-<div class="w-14 h-14 bg-teal-brand/10 text-teal-brand rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">skull</span>
-</div>
-<h3 class="text-xl font-bold text-primary mb-3">Severe Decay</h3>
-<p class="text-primary/70 leading-relaxed">When a tooth is too structurally compromised for a filling or crown to provide lasting support.</p>
-</div>
-<!-- Reason 2 -->
-<div class="group p-8 bg-background-light rounded-xl border border-transparent hover:border-teal-brand/30 hover:bg-white hover:shadow-xl transition-all duration-300">
-<div class="w-14 h-14 bg-teal-brand/10 text-teal-brand rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">coronavirus</span>
-</div>
-<h3 class="text-xl font-bold text-primary mb-3">Infection &amp; Abscess</h3>
-<p class="text-primary/70 leading-relaxed">Removing the source of infection prevents bacteria from spreading to the jawbone and blood.</p>
-</div>
-<!-- Reason 3 -->
-<div class="group p-8 bg-background-light rounded-xl border border-transparent hover:border-teal-brand/30 hover:bg-white hover:shadow-xl transition-all duration-300">
-<div class="w-14 h-14 bg-teal-brand/10 text-teal-brand rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">emergency_home</span>
-</div>
-<h3 class="text-xl font-bold text-primary mb-3">Impacted Wisdom</h3>
-<p class="text-primary/70 leading-relaxed">Relieving pain and protecting adjacent teeth from damage caused by lack of eruption space.</p>
-</div>
-<!-- Reason 4 -->
-<div class="group p-8 bg-background-light rounded-xl border border-transparent hover:border-teal-brand/30 hover:bg-white hover:shadow-xl transition-all duration-300">
-<div class="w-14 h-14 bg-teal-brand/10 text-teal-brand rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-3xl">grid_view</span>
-</div>
-<h3 class="text-xl font-bold text-primary mb-3">Overcrowding</h3>
-<p class="text-primary/70 leading-relaxed">Creating space for orthodontic treatment to ensure a perfectly aligned and functional smile.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- The Procedure Section -->
-<section class="py-24 bg-primary text-white overflow-hidden relative">
-<div class="absolute right-0 top-0 w-1/3 h-full bg-teal-brand/5 -skew-x-12 transform translate-x-20"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10">
+<!-- Technology Spotlight: Microscopic Rotary RCT -->
+<section class="py-24 px-6 lg:px-20 bg-white">
+<div class="container mx-auto">
 <div class="grid lg:grid-cols-2 gap-16 items-center">
-<div>
-<span class="text-teal-brand font-bold tracking-widest uppercase text-sm mb-4 block">The Experience</span>
-<h2 class="text-4xl lg:text-5xl font-bold mb-8 leading-tight">Our Pain-Free Process</h2>
-<div class="space-y-12">
-<div class="flex gap-6">
-<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-teal-brand flex items-center justify-center text-xl font-bold text-teal-brand">1</div>
-<div>
-<h4 class="text-xl font-bold mb-2">Detailed Diagnostics</h4>
-<p class="text-white/70">We use high-resolution 3D CT scans to map the tooth structure and nerve pathways with 99.9% precision.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-teal-brand flex items-center justify-center text-xl font-bold text-teal-brand">2</div>
-<div>
-<h4 class="text-xl font-bold mb-2">Absolute Comfort</h4>
-<p class="text-white/70">Using computerized local anesthesia or IV sedation, we ensure you feel nothing but peace throughout the procedure.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-shrink-0 w-12 h-12 rounded-full border-2 border-teal-brand flex items-center justify-center text-xl font-bold text-teal-brand">3</div>
-<div>
-<h4 class="text-xl font-bold mb-2">Micro-Invasive Removal</h4>
-<p class="text-white/70">Our specialized instruments allow for atraumatic extraction, preserving as much bone and tissue as possible for faster healing.</p>
-</div>
-</div>
-</div>
-<div class="mt-12 p-6 bg-white/5 rounded-xl border border-white/10 flex items-center gap-6">
-<span class="material-symbols-outlined text-gold-accent text-5xl">verified_user</span>
-<div>
-<h5 class="text-gold-accent font-bold">Pain-Free Guarantee</h5>
-<p class="text-sm text-white/60 uppercase tracking-wider font-bold">Clinical Standards of Excellence</p>
-</div>
-</div>
-</div>
 <div class="relative">
-<img alt="Professional dentist at work" class="rounded-2xl shadow-2xl relative z-10" data-alt="Professional dentist performing a procedure in a sterile environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo7YPwB8DlMFYqRJcbyRFKaOztHEH87DX54t7C5luBfxqq-BmD-5xRR_iklbBNc519URw7LODKcLKYQEqwsDTlROCSJcy9jBdNpl2HOJzh7xfxm77md0fPU-xwPB38X84U_aZxBzvUVz4XOd-IYllNPw_hQTFKa8wlpMIj8w5nv9HA4kx4gFb3QHOa5Ai9cutYxbGWApapVq_0KZZe8aVqKinyEiUBafe5CKWIq7hthQ9nFAWoeruSy_FAzAp2dFkP2G3ac6BCgg"/>
-<div class="absolute -bottom-6 -right-6 w-64 h-64 bg-teal-brand/20 rounded-2xl -z-0"></div>
+<div class="aspect-square rounded-3xl overflow-hidden bg-primary/5 relative">
+<img alt="Dental Microscope" class="w-full h-full object-cover" data-alt="Close up of advanced microscopic dental equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD79sSzY24MtNK0uraKgq4w5wc7i4oOFcumY6DmA-ykcm5n8Vul1sVVt629_jT-Oq4Kbi4tyMu83laWSBSfHXYoaSBwYir7M7jrkGjGAIsuKLQTBt3cqEoVJ-fpWmNyqXBCx7kP927ahGCZL0RfDRNCcf64X3SK3knfw7wbr1S8BggPiqUGJAL2ukns6aisbUmnZdNg3JqXImKwWRb3opxK-Ak3JQut6worleVPIX4BJSp1H_Jq8HMy36zDCpqtoWcKGSEMV1uRig"/>
+<div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-primary/5">
+<h4 class="font-bold text-primary mb-1">Precision Guaranteed</h4>
+<p class="text-sm text-primary/60">Using Leica Microscopic magnification for 100% cleaning accuracy.</p>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 size-32 bg-accent-teal rounded-full flex items-center justify-center text-white p-4 text-center leading-tight font-bold text-sm shadow-xl border-4 border-white animate-pulse">
+                            98.2% <br/>Success Rate
+                        </div>
+</div>
+<div>
+<h2 class="font-serif text-4xl text-primary mb-6">Advanced Microscopic <br/><span class="text-accent-teal">Rotary RCT</span></h2>
+<p class="text-primary/70 mb-8 leading-relaxed">
+                            Experience the future of endodontics with our advanced rotary systems and microscopic precision. Unlike traditional methods that rely on manual tools, our automated systems ensure a quieter, faster, and more effective procedure.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="size-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Microscopic Precision</h4>
+<p class="text-primary/60 text-sm">Enhanced visibility allows our experts to identify hidden canals and ensure thorough disinfection.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Rotary Endodontics</h4>
+<p class="text-primary/60 text-sm">Nitinol flexible files allow us to navigate curved canals with ease, reducing procedure time by 40%.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">history</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Single-Sitting Procedure</h4>
+<p class="text-primary/60 text-sm">Most cases are completed in just one visit, perfect for your busy schedule.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Aftercare Section -->
-<section class="py-24 bg-background-light">
-<div class="max-w-7xl mx-auto px-6 lg:px-20">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-primary mb-4">Aftercare &amp; Recovery</h2>
-<p class="text-primary/60">Expert guidance for a seamless healing journey.</p>
+<!-- Benefits Grid -->
+<section class="py-24 px-6 lg:px-20 bg-background-light">
+<div class="container mx-auto text-center mb-16">
+<span class="text-accent-teal font-bold uppercase tracking-widest text-xs">Patient Centric Care</span>
+<h2 class="font-serif text-4xl text-primary mt-3">Why Choose Ivories for RCT?</h2>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-teal-brand mb-4 text-4xl">restaurant</span>
-<h4 class="text-xl font-bold text-primary mb-4">What to Eat</h4>
-<ul class="space-y-3 text-primary/70">
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Greek yogurt and smoothies</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Mashed potatoes and soups</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Avoid seeds and crunchy foods</li>
-</ul>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-primary/5 group">
+<div class="size-14 rounded-xl bg-accent-teal/10 text-accent-teal flex items-center justify-center mb-6 group-hover:bg-accent-teal group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">mood</span>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-teal-brand">
-<span class="material-symbols-outlined text-teal-brand mb-4 text-4xl">healing</span>
-<h4 class="text-xl font-bold text-primary mb-4">Healing Tips</h4>
-<ul class="space-y-3 text-primary/70">
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Rest with head elevated</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Use cold compress for 24h</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> No smoking or using straws</li>
-</ul>
+<h4 class="font-bold text-lg text-primary mb-3">Zero Discomfort</h4>
+<p class="text-primary/60 text-sm leading-relaxed">Our advanced numbing techniques ensure you feel absolutely nothing during the procedure.</p>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-teal-brand mb-4 text-4xl">call_quality</span>
-<h4 class="text-xl font-bold text-primary mb-4">When to Call Us</h4>
-<ul class="space-y-3 text-primary/70">
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Severe, worsening pain</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Bleeding that won't stop</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-teal-brand text-sm mt-1">check_circle</span> Signs of fever or chills</li>
-</ul>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-primary/5 group">
+<div class="size-14 rounded-xl bg-accent-teal/10 text-accent-teal flex items-center justify-center mb-6 group-hover:bg-accent-teal group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">flash_on</span>
 </div>
+<h4 class="font-bold text-lg text-primary mb-3">Single-Visit Options</h4>
+<p class="text-primary/60 text-sm leading-relaxed">Efficient technology allows us to complete treatments in one sitting for 90% of cases.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-primary/5 group">
+<div class="size-14 rounded-xl bg-accent-teal/10 text-accent-teal flex items-center justify-center mb-6 group-hover:bg-accent-teal group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h4 class="font-bold text-lg text-primary mb-3">High Success Rate</h4>
+<p class="text-primary/60 text-sm leading-relaxed">Precision microscopic tools lead to significantly higher long-term success rates than standard RCT.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-primary/5 group">
+<div class="size-14 rounded-xl bg-accent-teal/10 text-accent-teal flex items-center justify-center mb-6 group-hover:bg-accent-teal group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">health_and_safety</span>
+</div>
+<h4 class="font-bold text-lg text-primary mb-3">Save Natural Tooth</h4>
+<p class="text-primary/60 text-sm leading-relaxed">Nothing beats your original tooth. We specialize in complex cases to avoid unnecessary extractions.</p>
 </div>
 </div>
 </section>
 <!-- FAQ Section -->
-<section class="py-24 bg-white">
-<div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
+<section class="py-24 px-6 lg:px-20 bg-white">
+<div class="container mx-auto max-w-4xl">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl text-primary">Common Concerns</h2>
+<p class="text-primary/60 mt-4">Addressing your questions about Root Canal Treatment</p>
+</div>
 <div class="space-y-4">
 <div class="border border-primary/10 rounded-xl overflow-hidden">
-<button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light transition-colors">
-<span class="text-lg font-bold text-primary">Does the procedure hurt?</span>
-<span class="material-symbols-outlined">expand_more</span>
-</button>
-<div class="px-6 pb-6 text-primary/70 leading-relaxed">
-                            With our advanced local anesthesia and sedation options, you will not feel any pain during the extraction. You may feel some pressure, but the area will be completely numb. Post-operative discomfort is managed with personalized medication plans.
-                        </div>
+<details class="group p-6 [&amp;_summary::-webkit-details-marker]:hidden" open="">
+<summary class="flex cursor-pointer items-center justify-between text-primary">
+<h5 class="text-lg font-bold">Does the procedure really not hurt?</h5>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-primary/70 leading-relaxed border-t border-primary/5 pt-4">
+                                Yes. Modern root canal treatment is very similar to having a routine filling. We use localized anesthesia and pain-management protocols that ensure you are completely comfortable throughout the visit.
+                            </div>
+</details>
 </div>
 <div class="border border-primary/10 rounded-xl overflow-hidden">
-<button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light transition-colors">
-<span class="text-lg font-bold text-primary">How long is the recovery time?</span>
-<span class="material-symbols-outlined">expand_more</span>
-</button>
+<details class="group p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between text-primary">
+<h5 class="text-lg font-bold">How long does the appointment take?</h5>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-primary/70 leading-relaxed border-t border-primary/5 pt-4">
+                                A typical microscopic rotary RCT at Ivories takes between 45 to 90 minutes. In most cases, the entire procedure can be completed in a single appointment.
+                            </div>
+</details>
 </div>
 <div class="border border-primary/10 rounded-xl overflow-hidden">
-<button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light transition-colors">
-<span class="text-lg font-bold text-primary">What are my replacement options?</span>
-<span class="material-symbols-outlined">expand_more</span>
-</button>
+<details class="group p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between text-primary">
+<h5 class="text-lg font-bold">Is a crown always necessary after an RCT?</h5>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-primary/70 leading-relaxed border-t border-primary/5 pt-4">
+                                Usually, yes. Since the tooth loses its blood supply after an RCT, it becomes more brittle. A dental crown protects the tooth from fractures and restores its full chewing function.
+                            </div>
+</details>
+</div>
+<div class="border border-primary/10 rounded-xl overflow-hidden">
+<details class="group p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between text-primary">
+<h5 class="text-lg font-bold">How do I know if I need a Root Canal?</h5>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-primary/70 leading-relaxed border-t border-primary/5 pt-4">
+                                Common signs include severe pain while chewing, sensitivity to hot or cold that lingers, tooth discoloration, or swelling in the gums. A digital X-ray at our clinic will confirm the diagnosis.
+                            </div>
+</details>
 </div>
 </div>
 </div>
 </section>
-<!-- Conversion CTA Section -->
-<section class="py-20 bg-primary relative overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary to-teal-brand/20"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-20 relative z-10 text-center">
-<div class="max-w-3xl mx-auto space-y-8">
-<h2 class="text-4xl lg:text-6xl font-bold text-white leading-tight">Need an Urgent Extraction?</h2>
-<p class="text-xl text-white/70">We prioritize dental emergencies. Contact us immediately for same-day evaluation and pain relief.</p>
-<div class="flex flex-col items-center gap-6">
-<button class="bg-gold-accent text-primary px-12 py-5 rounded-lg font-black text-xl hover:scale-105 transition-transform shadow-2xl">
-                            BOOK EMERGENCY APPOINTMENT
-                        </button>
+<!-- CTA & Inquiry Form Section -->
+<section class="py-24 px-6 lg:px-20 bg-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-96 h-96 bg-accent-teal rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-accent-teal rounded-full blur-[120px]"></div>
+</div>
+<div class="container mx-auto relative z-10">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-serif text-5xl text-white mb-8">Ready to save <br/><span class="text-accent-teal">your natural smile?</span></h2>
+<p class="text-white/70 mb-12 text-lg">Don't wait for the pain to get worse. Schedule a consultation with our endodontic specialists today and experience dentistry redefined.</p>
+<div class="space-y-6">
 <div class="flex items-center gap-4 text-white">
-<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-teal-brand">call</span>
+<div class="size-10 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-teal">call</span>
 </div>
-<span class="text-3xl font-bold tracking-tighter">0800-IVORIES-CARE</span>
+<div>
+<p class="text-xs text-white/50 uppercase tracking-widest">Emergency Helpline</p>
+<p class="text-xl font-bold">+1 (555) 0123-4567</p>
 </div>
+</div>
+<div class="flex items-center gap-4 text-white">
+<div class="size-10 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-teal">mail</span>
+</div>
+<div>
+<p class="text-xs text-white/50 uppercase tracking-widest">Email Us</p>
+<p class="text-xl font-bold">care@ivoriesclinic.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
+<h4 class="text-primary text-2xl font-bold mb-6 text-center">Inquiry Form</h4>
+<form class="space-y-4">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary/40 uppercase tracking-wider px-1">Full Name</label>
+<input class="w-full bg-background-light border-none rounded-xl p-4 text-primary focus:ring-2 focus:ring-accent-teal transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary/40 uppercase tracking-wider px-1">Phone Number</label>
+<input class="w-full bg-background-light border-none rounded-xl p-4 text-primary focus:ring-2 focus:ring-accent-teal transition-all" placeholder="+1..." type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary/40 uppercase tracking-wider px-1">Service Required</label>
+<select class="w-full bg-background-light border-none rounded-xl p-4 text-primary focus:ring-2 focus:ring-accent-teal transition-all">
+<option>Root Canal Treatment</option>
+<option>Dental Consultation</option>
+<option>Emergency Care</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary/40 uppercase tracking-wider px-1">Message</label>
+<textarea class="w-full bg-background-light border-none rounded-xl p-4 text-primary focus:ring-2 focus:ring-accent-teal transition-all" placeholder="Tell us about your concern..." rows="3"></textarea>
+</div>
+<button class="w-full bg-accent-teal text-white font-bold py-4 rounded-xl shadow-lg shadow-accent-teal/20 hover:bg-accent-teal/90 transition-all mt-4" type="submit">
+                                Send Message
+                            </button>
+</form>
 </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-primary text-white py-20 px-6 lg:px-20 border-t border-white/10">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-<div class="space-y-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-teal-brand text-3xl">dentistry</span>
-<h2 class="text-2xl font-bold">Ivories <span class="text-teal-brand">Dental</span></h2>
+<footer class="bg-background-light pt-20 pb-10 px-6 lg:px-20 border-t border-primary/5">
+<div class="container mx-auto">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div class="col-span-full lg:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 bg-primary flex items-center justify-center rounded text-white">
+<span class="material-symbols-outlined text-lg">dentistry</span>
 </div>
-<p class="text-white/60 leading-relaxed">Redefining modern dentistry with a focus on patient luxury, clinical excellence, and ethical care.</p>
+<h2 class="text-primary text-xl font-extrabold tracking-tight">Ivories</h2>
+</div>
+<p class="text-primary/60 text-sm leading-relaxed mb-6">Providing world-class dental care with a focus on patient comfort and advanced technology. Your smile is our priority.</p>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">favorite</span></a>
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-teal-brand transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-teal hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="size-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-teal hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">camera</span></a>
+<a class="size-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-teal hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">link</span></a>
 </div>
 </div>
 <div>
-<h4 class="text-lg font-bold mb-6">Our Services</h4>
-<ul class="space-y-4 text-white/60">
-<li><a class="hover:text-teal-brand transition-colors" href="#">Cosmetic Dentistry</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Dental Implants</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Orthodontics</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Teeth Removal</a></li>
+<h5 class="text-primary font-bold mb-6">Our Services</h5>
+<ul class="space-y-4 text-sm text-primary/60">
+<li><a class="hover:text-accent-teal" href="#">General Dentistry</a></li>
+<li><a class="hover:text-accent-teal text-primary font-semibold" href="#">Root Canal Treatment</a></li>
+<li><a class="hover:text-accent-teal" href="#">Dental Implants</a></li>
+<li><a class="hover:text-accent-teal" href="#">Cosmetic Dentistry</a></li>
+<li><a class="hover:text-accent-teal" href="#">Pediatric Care</a></li>
 </ul>
 </div>
 <div>
-<h4 class="text-lg font-bold mb-6">Quick Links</h4>
-<ul class="space-y-4 text-white/60">
-<li><a class="hover:text-teal-brand transition-colors" href="#">Book Online</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Patient Stories</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-teal-brand transition-colors" href="#">Careers</a></li>
+<h5 class="text-primary font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm text-primary/60">
+<li><a class="hover:text-accent-teal" href="#">About Our Clinic</a></li>
+<li><a class="hover:text-accent-teal" href="#">Patient Testimonials</a></li>
+<li><a class="hover:text-accent-teal" href="#">Book Appointment</a></li>
+<li><a class="hover:text-accent-teal" href="#">Insurance Partners</a></li>
+<li><a class="hover:text-accent-teal" href="#">Terms of Service</a></li>
 </ul>
 </div>
 <div>
-<h4 class="text-lg font-bold mb-6">Location</h4>
-<p class="text-white/60 mb-4">123 Ivory Tower, Medical District<br/>London, SW1A 1AA</p>
-<div class="h-32 w-full rounded-lg bg-white/5 border border-white/10 overflow-hidden">
-<img alt="Map location" class="w-full h-full object-cover grayscale opacity-50" data-alt="Map showing the location of Ivories Dental Clinic in London" data-location="London, UK" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQTG7h87YpA_3ABpTAT9uvb44ZNYwIDZa35pzdYjwFQyOv8nFGBGoZE53mWLGQWXvdpcCP6eEZ-fcPimQaAhOmJ9u2DtP2PcXOnnao4e85KJTbMtlGdFPRdrCfy4rMiFn9-NLNTuE4pWaAmijzSTivPOc3Xz2XPApLmb27DHfdvRzE0IgjXdPCtre9ZPR9Mpt_n6OlODUM9KaZcrl9eTemtLzCmyUaPDd6OgeZUIMoLzo4833-Shts8Bc5roKuE4tWsFBF6r_2Q"/>
+<h5 class="text-primary font-bold mb-6">Locate Us</h5>
+<div class="w-full h-40 rounded-xl overflow-hidden bg-primary/5 mb-4">
+<img alt="Map location" class="w-full h-full object-cover grayscale opacity-50" data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzkeS7fZn_yb2ISm0NzPMUJfcp_k02b_yAnZkramn9QnWGkwJC0O3Q7qwyrEis_bRIPvf9lfqXoxknIjjecMthF_QmfClRhepQAITZFaOfNMxaMlyM7K_uXDmAdea4Bue1EvvyeJ3pcrkYd-o6P0KVsbUjLF38K8O7r78hLp59AM4IqFWlemIE2x5yCHFD-792tpL84uvPyVWlJ5X19MgEdXl68bY41KEfTV8YlHUuy5LGRtsWO1Juf5MCuf4sBw6m6n73d4iOSw"/>
+</div>
+<p class="text-xs text-primary/60">123 Health Plaza, Medical District, NY 10001</p>
 </div>
 </div>
+<div class="pt-8 border-t border-primary/10 flex flex-col md:row justify-between items-center gap-4">
+<p class="text-xs text-primary/40">© 2024 Ivories Dental Clinic. All Rights Reserved.</p>
+<div class="flex gap-6 text-xs text-primary/40">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Medical Disclaimer</a>
 </div>
-<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:row justify-between items-center gap-4 text-white/40 text-sm">
-<p>© 2024 Ivories Dental Clinic. All rights reserved.</p>
-<div class="flex gap-8">
-<a href="#">Terms of Service</a>
-<a href="#">Accessibility</a>
 </div>
 </div>
 </footer>

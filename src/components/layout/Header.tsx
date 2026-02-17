@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 const treatmentItems = [
-  { label: "Dental Braces", href: "#" },
+  { label: "Root Canal Treatment", href: "/treatments/root-canal-treatment" },
+  { label: "Dental Braces", href: "/treatments/dental-braces" },
   { label: "Invisalign Aligners", href: "#" },
-  { label: "Kids Dentistry", href: "#" },
-  { label: "Smile Designing", href: "#" },
+  { label: "Kids Dentistry", href: "/treatments/kids-dentistry" },
+  { label: "Smile Designing", href: "/treatments/smile-designing" },
   { label: "Teeth Cleaning and Whitening", href: "#" },
   { label: "Teeth Removal", href: "/treatments/teeth-removal" },
   { label: "Crown and Bridges", href: "#" },
@@ -119,3 +120,5 @@ export default function Header() {
     </>
   );
 }
+
+
