@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const treatmentItems = [
   { label: "Root Canal Treatment", href: "/treatments/root-canal-treatment" },
@@ -16,6 +19,21 @@ const treatmentItems = [
 ];
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       <div className="w-full bg-[#200b3c] px-6 py-2 text-xs font-medium text-white md:px-12">
@@ -135,12 +153,136 @@ export default function Header() {
             >
               Make an Appointment
             </Link>
-            <button className="text-[#200b3c] lg:hidden">
+            <button
+              className="text-[#200b3c] lg:hidden"
+              onClick={() => setIsMenuOpen(true)}
+            >
               <span className="material-symbols-outlined text-3xl">menu</span>
             </button>
           </div>
         </nav>
       </header>
+
+      {/* Mobile Menu Drawer */}
+      <div
+        className={`fixed inset-0 z-[100] bg-[#200b3c]/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${isMenuOpen ? "visible opacity-100" : "invisible opacity-0"
+          }`}
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <div
+          className={`absolute inset-y-0 right-0 w-full max-w-sm bg-white p-6 shadow-2xl transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex items-center justify-between mb-8">
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-3">
+              <div className="flex size-10 items-center justify-center rounded-lg bg-[#200b3c] text-[#24B9D7]">
+                <span className="material-symbols-outlined text-3xl">dentistry</span>
+              </div>
+              <p className="text-xl font-bold tracking-tight text-[#200b3c] uppercase">Ivories</p>
+            </Link>
+            <button
+              className="text-[#200b3c]/40 hover:text-[#200b3c] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <span className="material-symbols-outlined text-3xl">close</span>
+            </button>
+          </div>
+
+          <nav className="space-y-1">
+            <Link
+              href="/"
+              onClick={() => setIsMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5 hover:text-[#24B9D7]"
+            >
+              Home
+            </Link>
+
+            <div>
+              <button
+                onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
+                className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5"
+              >
+                Treatments
+                <span
+                  className={`material-symbols-outlined transition-transform duration-200 ${isTreatmentsOpen ? "rotate-180" : ""
+                    }`}
+                >
+                  expand_more
+                </span>
+              </button>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ${isTreatmentsOpen ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"
+                  }`}
+              >
+                <ul className="pl-4 space-y-1">
+                  {treatmentItems.map((item) => (
+                    <li key={item.label}>
+                      <Link
+                        href={item.href}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsTreatmentsOpen(false);
+                        }}
+                        className="block rounded-lg px-4 py-2 text-sm font-semibold text-[#200b3c]/60 hover:bg-[#24B9D7]/10 hover:text-[#24B9D7]"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              href="/doctors"
+              onClick={() => setIsMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5 hover:text-[#24B9D7]"
+            >
+              Doctors
+            </Link>
+            <Link
+              href="/gallery"
+              onClick={() => setIsMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5 hover:text-[#24B9D7]"
+            >
+              Smile Gallery
+            </Link>
+            <Link
+              href="/testimonials"
+              onClick={() => setIsMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5 hover:text-[#24B9D7]"
+            >
+              Testimonials
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="block rounded-lg px-4 py-3 text-lg font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5 hover:text-[#24B9D7]"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          <div className="mt-8 pt-8 border-t border-[#200b3c]/5">
+            <Link
+              href="https://wa.me/919825571401"
+              target="_blank"
+              onClick={() => setIsMenuOpen(false)}
+              className="flex w-full items-center justify-center rounded-xl bg-[#200b3c] py-4 text-sm font-black tracking-widest text-white uppercase shadow-xl shadow-[#200b3c]/20 transition-all active:scale-95"
+            >
+              Make Appointment
+            </Link>
+            <div className="mt-6 flex flex-col items-center gap-2 text-[#200b3c]/40">
+              <span className="text-xs font-bold tracking-widest uppercase">Emergency Care</span>
+              <a href="tel:+917948000766" className="text-sm font-black text-[#200b3c]">
+                +91 79 48000766
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
