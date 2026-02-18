@@ -1,4 +1,5 @@
 import FeaturedTreatments from "@/components/home/FeaturedTreatments";
+import DoctorsSection from "@/components/home/DoctorsSection";
 import FloatingActions from "@/components/home/FloatingActions";
 import HeroSection from "@/components/home/HeroSection";
 import SolutionsSection from "@/components/home/SolutionsSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <TrustBar />
       <FeaturedTreatments />
       <WelcomeSection />
+      <DoctorsSection />
       <SolutionsSection />
       <TestimonialsSection />
       <FloatingActions />

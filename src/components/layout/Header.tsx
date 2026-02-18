@@ -94,9 +94,12 @@ export default function Header() {
             </li>
 
             <li>
-              <a className="transition-colors hover:text-[#24B9D7]" href="#">
+              <Link
+                className="transition-colors hover:text-[#24B9D7]"
+                href="/doctors"
+              >
                 Doctors
-              </a>
+              </Link>
             </li>
             <li>
               <Link

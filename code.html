@@ -1,323 +1,318 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Book Appointment | SmileCraft Advanced Dental Clinic</title>
+<title>About the Doctors | Ivories Dental Clinic</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#0B1F3A",
-                "accent-gold": "#C6A75E",
-                "background-light": "#F7F6F8",
-                "background-dark": "#181220",
-              },
-              fontFamily: {
-                "display": ["Manrope", "sans-serif"],
-                "serif": ["Playfair Display", "serif"]
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#200b3c",
+                        "accent-teal": "#24B9D7",
+                        "accent-gold": "#F7BB00",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#181220",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
             },
-          },
         }
     </script>
 <style>
-        .font-serif { font-family: 'Playfair Display', serif; }
-        .font-display { font-family: 'Manrope', sans-serif; }
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-primary transition-colors duration-300">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 py-4 lg:px-20">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white">
+<!-- Announcement Bar -->
+<div class="bg-primary text-white py-2 px-4 text-center text-xs font-medium tracking-wider">
+<span>ESTABLISHED EXCELLENCE: 19+ YEARS OF INTERNATIONAL DENTAL STANDARDS</span>
+</div>
+<!-- Sticky Premium Header -->
+<header class="sticky-header bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4 flex items-center justify-between">
 <div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg text-accent-gold">
-<span class="material-symbols-outlined text-2xl">dentistry</span>
+<div class="bg-primary p-1.5 rounded-lg">
+<svg class="w-6 h-6 text-white" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+</svg>
 </div>
-<div>
-<h1 class="font-serif text-xl font-bold tracking-tight text-primary uppercase">SmileCraft</h1>
-<p class="text-[10px] tracking-[0.2em] font-bold text-accent-gold uppercase -mt-1">Advanced Dental</p>
+<h1 class="text-xl font-extrabold tracking-tight text-primary dark:text-white uppercase">Ivories <span class="text-accent-teal">Dental</span></h1>
 </div>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Our Services</a>
-<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Specialists</a>
-<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Patient Care</a>
-<a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Contact</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-bold hover:text-accent-teal transition-colors" href="#">HOME</a>
+<a class="text-sm font-bold text-accent-teal underline underline-offset-4" href="#">DOCTORS</a>
+<a class="text-sm font-bold hover:text-accent-teal transition-colors" href="#">TREATMENTS</a>
+<a class="text-sm font-bold hover:text-accent-teal transition-colors" href="#">ACCREDITATIONS</a>
+<a class="text-sm font-bold hover:text-accent-teal transition-colors" href="#">CONTACT</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden sm:block text-primary font-bold text-sm underline decoration-accent-gold underline-offset-4">Patient Portal</button>
-<div class="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center border border-primary/10">
-<span class="material-symbols-outlined text-primary/60">person</span>
-</div>
-</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                BOOK APPOINTMENT
+            </button>
 </div>
 </header>
-<main class="min-h-screen">
 <!-- Hero Section -->
-<section class="relative h-[300px] w-full flex items-center justify-center bg-primary overflow-hidden">
-<div class="absolute inset-0 opacity-20">
-<img alt="Modern dental clinic interior" class="w-full h-full object-cover" data-alt="Modern high-end dental clinic interior with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpA-KI8wpE2puC4z6vjyH2GzYVSmzMtu23wVYXAHp4rlHtiAlpTTEOsLRiFsHEpZC4kNVEXyFkasEmeZVZJuO3qi-F93HrGMqZwiUZV6bBnB6J-UPs4u8AjZIPRPKGAZb8M4od4yIkv_HTlQsgX0cUKX5fFOzPMfp08twaoG9GaDNjYKMcZb6YaIyDx9ZdY4Gxwi9QlupmTT81mPXYH5QGXDdKz80pj2W_paWpvCk8AMahJwAMMJj1ED0EcAIce-wNPEiTAasFwg"/>
-</div>
-<div class="relative z-10 text-center px-4">
-<h2 class="font-serif text-4xl md:text-5xl text-white mb-4">Book Your Transformation</h2>
-<p class="text-accent-gold font-medium tracking-widest uppercase text-sm">Concierge Dental Care Scheduling</p>
+<section class="py-16 px-6 lg:px-40 bg-white dark:bg-background-dark">
+<div class="max-w-4xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-teal/10 text-accent-teal text-xs font-black mb-6 tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm">verified</span>
+                World-Class Clinical Expertise
+            </div>
+<h2 class="text-4xl lg:text-6xl font-black mb-6 leading-tight">Meet the Visionaries Behind Your <span class="text-accent-teal italic">Ivory Smile</span></h2>
+<p class="text-lg text-primary/70 dark:text-gray-400 font-medium">Led by pioneers in modern dentistry, our clinic combines international academic training with 19 years of clinical excellence to deliver unparalleled results in oral healthcare.</p>
 </div>
 </section>
-<!-- Main Booking Content -->
-<div class="max-w-7xl mx-auto px-6 -mt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
-<!-- Left Sidebar: Trust Points -->
-<aside class="lg:col-span-4 order-2 lg:order-1">
-<div class="sticky top-28 space-y-6">
-<div class="bg-white p-8 rounded-xl shadow-sm border border-primary/5">
-<h3 class="font-serif text-2xl text-primary mb-6">Why SmileCraft?</h3>
-<div class="space-y-8">
-<div class="flex gap-4">
-<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
-<span class="material-symbols-outlined text-2xl">verified_user</span>
+<!-- Dr. Alaap Shah Profile -->
+<section class="py-20 px-6 lg:px-40 border-t border-primary/5">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<div class="w-full lg:w-1/2 relative group">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-accent-gold/20 rounded-xl -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-accent-teal/10 rounded-xl -z-10"></div>
+<div class="aspect-[4/5] bg-gray-200 rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Dr. Alaap Shah" class="w-full h-full object-cover" data-alt="Portrait of Dr. Alaap Shah in a clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD497tf3-Wcw_bVQ3DYcloSle2984VpuOeRO4tXTunshlw-6bz5uPZy6rFa68JL5s-EK4e4YYliDTXCrMOu3xVfvXxiHIYYzzmiBg2-8IQrthrLVY835CDPVtMBM0bW9axaR9EERuKitaMKWEZv619AMBCEFa5qUP7P5RTgewsRDW9kwob88LH-8O1IC1y16dmUCUONCChrjzlCq_HLStFsTcC-okKMkciNcjQXMgMJR_w-tsJkhx8hUJkT9xl3wHW9guTXJgTTkg"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur rounded-lg shadow-xl">
+<p class="text-xs font-black text-accent-teal uppercase tracking-widest mb-1">Chief Implantologist</p>
+<h3 class="text-2xl font-black text-primary">Dr. Alaap Shah</h3>
+<p class="text-sm font-medium text-primary/60">BDS, MDS, cED (NYU, USA)</p>
 </div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
 <div>
-<h4 class="font-bold text-primary">ISO 9001 Certified</h4>
-<p class="text-sm text-primary/60 leading-relaxed">International standards for sterilization and patient safety protocols.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
-<span class="material-symbols-outlined text-2xl">sentiment_satisfied</span>
-</div>
-<div>
-<h4 class="font-bold text-primary">Painless Procedures</h4>
-<p class="text-sm text-primary/60 leading-relaxed">Advanced laser and sedation options for a stress-free experience.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<div class="shrink-0 h-12 w-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
-<span class="material-symbols-outlined text-2xl">medical_services</span>
-</div>
-<div>
-<h4 class="font-bold text-primary">Expert Specialists</h4>
-<p class="text-sm text-primary/60 leading-relaxed">A team of specialists with 15+ years of clinical excellence.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-primary p-8 rounded-xl text-white">
-<h4 class="font-serif text-xl mb-2">Emergency?</h4>
-<p class="text-sm text-white/70 mb-4">Immediate pain relief appointments available within 2 hours.</p>
-<a class="flex items-center gap-2 font-bold text-accent-gold hover:text-white transition-colors" href="tel:1800SMILE">
-<span class="material-symbols-outlined">call</span>
-                            Call 1-800-SMILE-DR
-                        </a>
-</div>
-</div>
-</aside>
-<!-- Multi-Step Form Container -->
-<section class="lg:col-span-8 order-1 lg:order-2">
-<div class="bg-white rounded-xl shadow-xl border border-primary/5 overflow-hidden">
-<!-- Progress Bar -->
-<div class="bg-primary/5 border-b border-primary/10 px-8 py-4 flex items-center justify-between">
-<div class="flex items-center gap-6">
-<div class="flex items-center gap-2">
-<span class="h-6 w-6 rounded-full bg-primary text-white text-[10px] flex items-center justify-center font-bold">1</span>
-<span class="text-xs font-bold uppercase tracking-wider text-primary">Details</span>
-</div>
-<div class="h-px w-8 bg-primary/20"></div>
-<div class="flex items-center gap-2 opacity-40">
-<span class="h-6 w-6 rounded-full bg-primary/20 text-primary text-[10px] flex items-center justify-center font-bold">2</span>
-<span class="text-xs font-bold uppercase tracking-wider text-primary">Treatment</span>
-</div>
-<div class="h-px w-8 bg-primary/20"></div>
-<div class="flex items-center gap-2 opacity-40">
-<span class="h-6 w-6 rounded-full bg-primary/20 text-primary text-[10px] flex items-center justify-center font-bold">3</span>
-<span class="text-xs font-bold uppercase tracking-wider text-primary">Schedule</span>
-</div>
-</div>
-<span class="text-xs font-bold text-accent-gold">Step 1 of 3</span>
-</div>
-<div class="p-8 md:p-12">
-<form class="space-y-8">
-<!-- Step 1: Personal Info -->
-<div class="space-y-6">
-<h3 class="font-serif text-2xl text-primary">Patient Information</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Full Name</label>
-<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="John Doe" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Email Address</label>
-<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="john@example.com" type="email"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Phone Number</label>
-<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 placeholder:text-primary/30" placeholder="+1 (555) 000-0000" type="tel"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Patient Type</label>
-<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5">
-<option>New Patient</option>
-<option>Returning Patient</option>
-</select>
-</div>
-</div>
-</div>
-<!-- Step 2: Service Selection -->
-<div class="space-y-6 pt-8 border-t border-primary/10">
-<h3 class="font-serif text-2xl text-primary">Treatment &amp; Doctor</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Select Service</label>
-<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 font-medium">
-<option disabled="" selected="">Choose a procedure...</option>
-<option>Smile Makeover (Cosmetic)</option>
-<option>Dental Implants</option>
-<option>Root Canal Therapy</option>
-<option>Professional Cleaning</option>
-<option>Orthodontics (Invisalign)</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Preferred Doctor</label>
-<select class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5 font-medium">
-<option>First Available Specialist</option>
-<option>Dr. Sarah Harrington (Implantology)</option>
-<option>Dr. Marcus Vane (Orthodontics)</option>
-<option>Dr. Elena Kozlov (General Dentistry)</option>
-</select>
-</div>
-</div>
-</div>
-<!-- Step 3: Scheduling -->
-<div class="space-y-6 pt-8 border-t border-primary/10">
-<h3 class="font-serif text-2xl text-primary">Availability</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Preferred Date</label>
-<div class="relative">
-<input class="w-full border-primary/10 rounded-lg focus:ring-accent-gold focus:border-accent-gold py-3 px-4 bg-primary/5" type="date"/>
-</div>
-</div>
+<h4 class="text-primary/40 dark:text-white/40 text-sm font-bold uppercase tracking-widest mb-2">Credentials &amp; Background</h4>
+<p class="text-xl font-medium leading-relaxed mb-6 text-primary/90 dark:text-gray-200">
+                        Dr. Alaap Shah is a distinguished <span class="text-primary font-black underline decoration-accent-teal underline-offset-4">Prosthodontist &amp; Dental Implantologist</span> with over 19 years of excellence. As an Assistant Professor at Ahmedabad Dental College, he bridges the gap between academic innovation and clinical mastery.
+                    </p>
 <div class="space-y-4">
-<label class="text-xs font-bold uppercase tracking-widest text-primary/60">Available Time Slots</label>
-<div class="grid grid-cols-3 gap-2">
-<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">09:00 AM</button>
-<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">10:30 AM</button>
-<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">11:45 AM</button>
-<button class="py-2 text-xs font-bold bg-accent-gold text-white rounded-md" type="button">02:15 PM</button>
-<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">04:00 PM</button>
-<button class="py-2 text-xs font-bold border border-primary/10 rounded-md hover:bg-primary hover:text-white transition-all" type="button">05:30 PM</button>
+<div class="flex gap-4 p-4 rounded-xl bg-white border border-primary/5 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-accent-teal text-3xl">school</span>
+<div>
+<h5 class="font-bold text-primary">NYU (USA) Certified</h5>
+<p class="text-sm text-primary/60">Advanced training in Esthetic Dentistry and complex clinical cases.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl bg-white border border-primary/5 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-accent-gold text-3xl">magnification_small</span>
+<div>
+<h5 class="font-bold text-primary">Precision Specialist</h5>
+<p class="text-sm text-primary/60">Expert in microscopic endodontics and high-precision restorative surgery.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- Final Button -->
-<div class="pt-10 flex flex-col items-center">
-<button class="w-full md:w-auto min-w-[300px] bg-accent-gold hover:bg-accent-gold/90 text-primary font-bold py-5 px-10 rounded-lg transition-all shadow-lg hover:shadow-accent-gold/20 flex items-center justify-center gap-3 group" type="submit">
-<span>CONFIRM APPOINTMENT</span>
-<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">calendar_today</span>
-</button>
-<p class="mt-4 text-[10px] text-primary/40 uppercase tracking-widest">By clicking confirm, you agree to our booking terms and conditions.</p>
+<div>
+<h4 class="text-primary/40 dark:text-white/40 text-sm font-bold uppercase tracking-widest mb-4">Core Specializations</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-primary/5 rounded-lg border border-primary/10 hover:border-accent-teal transition-colors">
+<span class="material-symbols-outlined text-accent-teal mb-2">medical_services</span>
+<h6 class="font-bold text-sm">Dental Implants</h6>
 </div>
-</form>
+<div class="p-4 bg-primary/5 rounded-lg border border-primary/10 hover:border-accent-teal transition-colors">
+<span class="material-symbols-outlined text-accent-teal mb-2">architecture</span>
+<h6 class="font-bold text-sm">Full Mouth Rehab</h6>
+</div>
+<div class="p-4 bg-primary/5 rounded-lg border border-primary/10 hover:border-accent-teal transition-colors">
+<span class="material-symbols-outlined text-accent-teal mb-2">auto_awesome</span>
+<h6 class="font-bold text-sm">Cosmetic Dentistry</h6>
+</div>
+<div class="p-4 bg-primary/5 rounded-lg border border-primary/10 hover:border-accent-teal transition-colors">
+<span class="material-symbols-outlined text-accent-teal mb-2">biotech</span>
+<h6 class="font-bold text-sm">Microscopic RCT</h6>
 </div>
 </div>
-<!-- FAQ Section Below Form -->
-<div class="mt-16 space-y-8">
-<h3 class="font-serif text-3xl text-primary text-center">Frequently Asked Questions</h3>
-<div class="space-y-4">
-<div class="bg-white rounded-lg border border-primary/10 p-6">
-<button class="w-full flex items-center justify-between group">
-<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">What should I bring to my first visit?</span>
-<span class="material-symbols-outlined text-accent-gold">add</span>
-</button>
-<div class="mt-4 text-primary/60 text-sm leading-relaxed">
-                                Please bring a valid ID, your insurance card (if applicable), and any previous dental records or X-rays from the last 6 months. We also recommend arriving 10 minutes early to complete initial paperwork.
-                            </div>
 </div>
-<div class="bg-white rounded-lg border border-primary/10 p-6">
-<button class="w-full flex items-center justify-between group">
-<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">Do you offer flexible payment plans?</span>
-<span class="material-symbols-outlined text-accent-gold">add</span>
-</button>
 </div>
-<div class="bg-white rounded-lg border border-primary/10 p-6">
-<button class="w-full flex items-center justify-between group">
-<span class="font-bold text-primary group-hover:text-accent-gold transition-colors">Is parking available at the clinic?</span>
-<span class="material-symbols-outlined text-accent-gold">add</span>
+</div>
+</section>
+<!-- Trust Badges Bar -->
+<div class="bg-primary/5 py-12 px-6 lg:px-40">
+<div class="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-70 grayscale hover:grayscale-0 transition-all">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">workspace_premium</span>
+<span class="text-[10px] font-black tracking-widest uppercase">ISO 9001:2015 Certified</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">public</span>
+<span class="text-[10px] font-black tracking-widest uppercase">NYU trained Expertise</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">history_edu</span>
+<span class="text-[10px] font-black tracking-widest uppercase">19+ Years Legacy</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">health_and_safety</span>
+<span class="text-[10px] font-black tracking-widest uppercase">International Standards</span>
+</div>
+</div>
+</div>
+<!-- Dr. Kinjal Shah Profile -->
+<section class="py-20 px-6 lg:px-40 bg-white dark:bg-background-dark overflow-hidden relative">
+<!-- Abstract background elements -->
+<div class="absolute top-1/2 -right-40 w-96 h-96 bg-accent-teal/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-gold/5 rounded-full blur-3xl"></div>
+<div class="flex flex-col lg:flex-row-reverse gap-16 items-start">
+<div class="w-full lg:w-1/2 relative">
+<div class="aspect-[4/5] bg-gray-200 rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Dr. Kinjal Shah" class="w-full h-full object-cover" data-alt="Portrait of Dr. Kinjal Shah in a clinic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc02g_CFE6SMR5loRCWFkcXO0i06PldP62iO9mgKYKsec0CpnJFIaH7nHCwt1p1XeVB2DQUrd3iXj50zHdu4IOGklfA8cR-EEG1ptLMobBs9SjIx16EBc7AZVL4iPxhqMXEyGb8nLXnPpHB2a1cXxL8BtwduAUBh_SvgS0EeHw2DG9EYHQrDw2g_tzcFoVNrT7l5sNgeDUTYjhor7Qmas6SeSEjRNYWZImypzV68R0qN1plOW_Y7IWoi8E4-YWqibJPaXi6FAv_w"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur rounded-lg shadow-xl border-l-4 border-accent-gold">
+<p class="text-xs font-black text-accent-gold uppercase tracking-widest mb-1">Aesthetic Specialist</p>
+<h3 class="text-2xl font-black text-primary">Dr. Kinjal Shah</h3>
+<p class="text-sm font-medium text-primary/60">BDS, MDS</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
+<div>
+<h4 class="text-primary/40 dark:text-white/40 text-sm font-bold uppercase tracking-widest mb-2">Clinical Expertise</h4>
+<p class="text-xl font-medium leading-relaxed mb-6 text-primary/90 dark:text-gray-200">
+                        Dr. Kinjal Shah specializes in <span class="text-accent-teal font-black underline decoration-accent-gold underline-offset-4">Aesthetic Dentistry and Pediatric Care</span>. Her patient-first philosophy focuses on preventive treatments and creating a stress-free environment for families.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 rounded-xl bg-background-light dark:bg-background-dark border border-primary/5">
+<span class="material-symbols-outlined text-accent-gold text-4xl mb-4">face_6</span>
+<h5 class="font-bold text-primary dark:text-white mb-2">Smile Design</h5>
+<p class="text-sm text-primary/60 dark:text-gray-400">Crafting personalized aesthetic enhancements using the latest digital technologies.</p>
+</div>
+<div class="p-6 rounded-xl bg-background-light dark:bg-background-dark border border-primary/5">
+<span class="material-symbols-outlined text-accent-teal text-4xl mb-4">child_care</span>
+<h5 class="font-bold text-primary dark:text-white mb-2">Pediatric Care</h5>
+<p class="text-sm text-primary/60 dark:text-gray-400">Gentle, specialized dental care designed specifically for children's comfort.</p>
+</div>
+</div>
+</div>
+<div class="bg-primary p-8 rounded-2xl text-white relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 scale-150 transform transition-transform group-hover:rotate-12">
+<span class="material-symbols-outlined text-8xl">verified_user</span>
+</div>
+<h5 class="text-xl font-black mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-gold">stars</span>
+                        Commitment to Prevention
+                    </h5>
+<p class="text-primary/20 bg-white/10 p-4 rounded-lg text-sm leading-relaxed mb-6 font-medium text-white/80">
+                        "We believe that the best dentistry is preventive dentistry. Our goal is to empower patients with the knowledge and care needed to maintain natural smiles for a lifetime."
+                    </p>
+<button class="flex items-center gap-2 bg-accent-gold text-primary font-black text-sm px-6 py-3 rounded-lg hover:scale-105 transition-transform">
+                        CONSULT DR. KINJAL <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 </div>
 </div>
 </div>
 </section>
+<!-- Clinic Environment Section -->
+<section class="py-20 px-6 lg:px-40 bg-background-light dark:bg-background-dark">
+<div class="mb-12 flex items-end justify-between">
+<div class="max-w-2xl">
+<h4 class="text-accent-teal text-xs font-black uppercase tracking-[0.3em] mb-4">State-of-the-Art</h4>
+<h3 class="text-3xl lg:text-4xl font-black">International Standard Infrastructure</h3>
 </div>
-</main>
-<!-- Premium Footer -->
-<footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20">
-<div class="max-w-7xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/10">
-<div class="space-y-6">
+<button class="hidden md:flex items-center gap-2 text-sm font-black border-b-2 border-primary pb-1">
+                VIRTUAL TOUR <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="aspect-video bg-gray-200 rounded-xl overflow-hidden group relative">
+<img alt="Clinic Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern dental clinic consultation room with advanced equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHvmWHJRbp0aGlaUa7_4oBvnepl3msa96-07NgRfRxluh66pN1W6B5cdnGqJ5PnNZui1pwKmsfMSQbi1oLimq7s3Ln-8M_TFwR7_ZfIacwZS2yBnCvcG3wYq2h3WBiAdeE34hPREVFRaAhqABWmeSGjrtxPJJe0CYLa30OsPtfl7sbZaGckP628lBaA-osny1Rc5aOqBJegRrcTXQ_4QXAJ4KHKAaVZpbMCIdOG6dQboTW9dFbgW5f5W0RI5lf1FyH2njo-rzPIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-white text-sm font-bold tracking-wider">MODERN CONSULTATION SUITE</p>
+</div>
+</div>
+<div class="aspect-video bg-gray-200 rounded-xl overflow-hidden group relative">
+<img alt="Clinical Equipment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High-tech dental microscope for root canal procedures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRuz3sjNp43vOzYFS1DtpKx24h9EJ_xpXQmbM61FhJ0jP17Nth8GeGRu4q1xWZVgL8JeEBOk9EzviivCM4KaryqLRUO9nLe9NIawOezbtM-S4JhmTqZw--rQVk64Rd-z_xPrXypyh4TzyfN-5F-wWKFU7rBYjTSQNDMQ_EFpqYYAKPRh_jbd1kUiW7e_8S2wF6G_4rg0uMhKSReuc2D4-dLZlNk7i6JWt3YhY8uY4r-KO5m7jIr5-ecBWO_mSkTJyjU5MPG36qmA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-white text-sm font-bold tracking-wider">MICROSCOPIC PRECISION UNIT</p>
+</div>
+</div>
+<div class="aspect-video bg-gray-200 rounded-xl overflow-hidden group relative">
+<img alt="Sterilization Zone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Advanced dental sterilization and laboratory area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkJoD8LpRICCBRKViv1O6GzOTl02jCUnRN6qD9HDDMiLdMaIalL1Zk3rq5YqPbnuer3Y2NwGbsZgmHE0sNgX-w4TCLOZQBMAQ2ewxDOXA2w25AbclkUBqegAjUwn7RvyR7EXV8kb150Rm7dPXDjAo7n7tvFColtbWPr7srTt9cji3p47_59ZvzcG8OZYW3977_RvPkJll0l_e0oAIpmMBgOM_THC-nYd-WIVFBJq5ahjvTpmCwKy81vaGOspJNX_PSwuCfElXZ3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-white text-sm font-bold tracking-wider">ISO-CERTIFIED STERILIZATION ZONE</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-40">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
+<div class="lg:col-span-2 space-y-6">
 <div class="flex items-center gap-3">
-<div class="bg-accent-gold p-2 rounded-lg text-primary">
-<span class="material-symbols-outlined text-2xl">dentistry</span>
+<div class="bg-white p-1 rounded-lg">
+<svg class="w-6 h-6 text-primary" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+</svg>
 </div>
-<h2 class="font-serif text-xl font-bold tracking-tight text-white uppercase">SmileCraft</h2>
+<h2 class="text-xl font-extrabold tracking-tight uppercase">Ivories Dental</h2>
 </div>
-<p class="text-sm text-white/60 leading-relaxed">Redefining modern dentistry through innovation, comfort, and clinical excellence. Your smile is our mastercraft.</p>
+<p class="text-white/60 text-sm leading-relaxed max-w-sm">
+                    Premium dental healthcare center specialized in dental implants, aesthetic restorations, and microscopic dentistry. ISO 9001:2015 certified.
+                </p>
 <div class="flex gap-4">
-<a class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent-gold hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">public</span>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
 </a>
-<a class="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent-gold hover:text-primary transition-all" href="#">
-<span class="material-symbols-outlined">alternate_email</span>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">videocam</span>
 </a>
 </div>
 </div>
-<div>
-<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Procedures</h4>
-<ul class="space-y-4 text-sm text-white/60">
-<li><a class="hover:text-white transition-colors" href="#">Cosmetic Dentistry</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Dental Implants</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Teeth Whitening</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Orthodontics</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Clinic Info</h4>
-<ul class="space-y-4 text-sm text-white/60">
+<div class="space-y-6">
+<h5 class="font-black text-sm uppercase tracking-widest text-accent-teal">Navigation</h5>
+<ul class="space-y-4 text-sm text-white/60 font-bold">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
 <li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Our Doctors</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Patient Stories</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Doctors</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Treatments</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-bold uppercase tracking-widest text-xs text-accent-gold mb-6">Visit Us</h4>
-<div class="space-y-4 text-sm text-white/60">
-<p class="flex items-start gap-3">
-<span class="material-symbols-outlined text-accent-gold text-lg">location_on</span>
-                            1200 Dental Plaza, Suite 400<br/>Beverly Hills, CA 90210
-                        </p>
-<p class="flex items-center gap-3">
-<span class="material-symbols-outlined text-accent-gold text-lg">call</span>
-                            (555) 123-4567
-                        </p>
+<div class="lg:col-span-2 space-y-6">
+<h5 class="font-black text-sm uppercase tracking-widest text-accent-teal">Find Us</h5>
+<div class="h-48 rounded-xl bg-white/5 border border-white/10 overflow-hidden relative group">
+<img alt="Map" class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all" data-location="Ahmedabad, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF6_hyFj8eVviR2N_BUMVbCFZWfe6J-EF0iDuJ78d4hP8K0ruE8REiI77pZUReqgypN0AIi21JeMX4KT8tFFHrRL8s1W86HMvhf7s0edqLJiOCwEZfsYwfOmTXl-Z4fxa1bPlPuDgTzyXzdDfZE9pekXOfro7AGc6LV4EvtKeOKRxvccZmKX1SPE91vaItewEzdOxDUYQlJr9n6v3sZzFVb-1mTOI8yPuFGOo33BEJpnIHZYPprDdty-UyuQrMxiBZe3GWIYP0eA"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary px-4 py-2 rounded shadow-2xl flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-teal">location_on</span>
+<span class="text-xs font-black uppercase tracking-widest">Ahmedabad, India</span>
 </div>
 </div>
 </div>
-<div class="pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="text-[10px] text-white/40 uppercase tracking-widest">© 2024 SmileCraft Advanced Dental Clinic. All Rights Reserved.</p>
-<div class="flex items-center gap-6">
-<img alt="ISO Certified Badge" class="opacity-30 h-8 grayscale brightness-200" data-alt="ISO 9001 certification badge logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ_GMrc-x-iQVES6-aGfZKXBXARPMFWu9Lv36XHc7TZv8Z_d7j9BQLtVmTG1wmN1NimZyj_V3kjleMjzEC-f8A1xSfJ2-WcpBC629kwgYUTe7GgatJQYLnBMojkXG9r_aFFlCAmIvUKBdT6fy2wKJrkkYrYhsQsJXeEl4zknCVVio-S0tYCyZdsLMlc83hyNET96pIofWmyW_APi-y8tj_goWvKHcBfRaa5yeY3imr3yraTvk0smPa9GPxrtZniZf6x2jIw1uBzQ"/>
-<img alt="ADA Member Badge" class="opacity-30 h-8 grayscale brightness-200" data-alt="American Dental Association member badge logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD51ExOEB4l_QXXHzc5yuebTx3FsynhxnzZBPNuOubnBYAv6klsiDwDGR-4GOiC1uT0TjrKssgAxZh_CXz6Ms8KIOufEZK3EurRCRm2wiQnfUrGzFdvfG37l0mfyE23dFEbzt34v4C6DB9FLj9qAlZp42yX_hS_O2XeKZ1Uzhg93iZk0UwJmQxXGwE3HeyESvaxqn9ASdfaq2w0cF_8zUCXT8qsOgVZbMV_zXt6OyKWSPQo_EzasdflAiVtOXssiEVeCr_IIGRsow"/>
+<div class="space-y-2 text-sm text-white/60">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-accent-teal">call</span> +91 98765 43210</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-accent-teal">mail</span> care@ivoriesdental.com</p>
 </div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black tracking-[0.2em] text-white/40 uppercase">
+<p>© 2024 Ivories Dental Clinic. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
 </div>
 </div>
 </footer>
+<!-- Floating Action Buttons -->
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
+<a class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" href="https://wa.me/yournumber">
+<svg class="w-7 h-7" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793 0-.852.449-1.271.608-1.445.159-.175.348-.218.463-.218s.232.001.334.005c.109.004.254-.041.399.305.144.347.492 1.201.536 1.287.043.086.072.187.014.304-.058.117-.087.188-.174.289l-.26.304c-.087.101-.177.211-.077.382.1.17.444.733.953 1.185.656.584 1.21.765 1.382.852.174.087.275.072.376-.045.101-.116.434-.506.55-.68.116-.174.232-.145.39-.087.159.058 1.014.478 1.187.565.173.088.289.129.334.202.043.073.043.419-.102.824z"></path>
+</svg>
+</a>
+<button class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">calendar_month</span>
+</button>
+</div>
 </body></html>

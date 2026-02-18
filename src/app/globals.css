@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #f7f6f8;
   --foreground: #200b3c;
@@ -8,7 +12,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #200b3c;
+  --color-accent-teal: #24b9d7;
+  --color-accent-gold: #f7bb00;
+  --color-background-light: #f7f6f8;
+  --color-background-dark: #181220;
   --font-sans: var(--font-manrope);
+  --font-display: var(--font-manrope);
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
 }
 
 body {
@@ -22,9 +34,7 @@ body {
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    to right,
-    rgba(32, 11, 60, 0.9),
-    rgba(32, 11, 60, 0.2)
-  );
+  background: linear-gradient(to right,
+      rgba(32, 11, 60, 0.9),
+      rgba(32, 11, 60, 0.2));
 }
