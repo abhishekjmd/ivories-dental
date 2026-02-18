@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import FloatingActions from "@/components/home/FloatingActions";
+
+export const metadata: Metadata = {
+  title: "About Us | Expert Dentists at Ivories Dental Clinic",
+  description:
+    "Meet Dr. Alaap Shah and Dr. Kinjal Shah, the visionaries behind Ivories Dental Clinic. With 19+ years of experience and NYU training, we provide world-class dental care in Ahmedabad.",
+};
 
 const trustBadges = [
   {

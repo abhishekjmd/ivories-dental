@@ -26,9 +26,13 @@ export default function CrownsBridgesPage() {
               solutions.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-[#0B1F3A] shadow-lg shadow-[#24B9D7]/20 transition-all hover:bg-white hover:text-[#0B1F3A]">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-[#0B1F3A] shadow-lg shadow-[#24B9D7]/20 transition-all hover:bg-white hover:text-[#0B1F3A] text-center"
+              >
                 Book Consultation
-              </button>
+              </a>
               <button className="flex items-center gap-2 rounded-lg border border-white/30 px-8 py-4 font-bold text-white transition-all hover:bg-white/10">
                 <span className="material-symbols-outlined">play_circle</span>
                 View Gallery
@@ -223,10 +227,13 @@ export default function CrownsBridgesPage() {
               </h2>
               <h3 className="text-4xl font-extrabold">Real Results, Real Smiles</h3>
             </div>
-            <button className="flex items-center gap-2 border-b-2 border-[#24B9D7] pb-1 font-bold text-[#0B1F3A]">
+            <a
+              href="/gallery"
+              className="flex items-center gap-2 border-b-2 border-[#24B9D7] pb-1 font-bold text-[#0B1F3A] transition-all"
+            >
               View Full Gallery{" "}
               <span className="material-symbols-outlined">trending_flat</span>
-            </button>
+            </a>
           </div>
           <div className="grid gap-10 md:grid-cols-2">
             <div className="space-y-4">
@@ -437,12 +444,13 @@ export default function CrownsBridgesPage() {
                     rows={4}
                   />
                 </div>
-                <button
-                  className="w-full rounded-lg bg-[#24B9D7] py-4 font-bold tracking-widest text-[#0B1F3A] uppercase shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-white hover:text-[#0B1F3A]"
-                  type="submit"
+                <a
+                  href="https://wa.me/919825571401"
+                  target="_blank"
+                  className="w-full block text-center rounded-lg bg-[#24B9D7] py-4 font-bold tracking-widest text-[#0B1F3A] uppercase shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-white hover:text-[#0B1F3A]"
                 >
                   Submit Inquiry
-                </button>
+                </a>
               </form>
             </div>
           </div>

@@ -27,10 +27,14 @@ export default function KidsDentistryPage() {
                 adventures.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <button className="flex items-center justify-center gap-2 rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-white shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90">
+                <a
+                  href="https://wa.me/919825571401"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-white shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90 text-center"
+                >
                   Book a Pediatric Consultation
                   <span className="material-symbols-outlined">arrow_forward</span>
-                </button>
+                </a>
                 <button className="flex items-center justify-center gap-2 rounded-lg border border-[#0B1F3A]/10 bg-white px-8 py-4 font-bold text-[#0B1F3A] transition-all hover:bg-[#0B1F3A]/5">
                   Explore Our Approach
                 </button>
@@ -221,7 +225,11 @@ export default function KidsDentistryPage() {
       </main>
 
       <div className="fixed right-8 bottom-8 z-50 flex flex-col gap-4">
-        <a className="group relative flex items-center" href="tel:+442079460123">
+        <a
+          className="group relative flex items-center"
+          href="https://wa.me/919825571401"
+          target="_blank"
+        >
           <span className="absolute right-14 whitespace-nowrap rounded-full bg-red-600 px-3 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
             Emergency Call
           </span>
@@ -229,7 +237,11 @@ export default function KidsDentistryPage() {
             <span className="material-symbols-outlined">call</span>
           </div>
         </a>
-        <a className="group relative flex items-center" href="https://wa.me/yournumber">
+        <a
+          className="group relative flex items-center"
+          href="https://wa.me/919825571401"
+          target="_blank"
+        >
           <span className="absolute right-14 whitespace-nowrap rounded-full bg-[#25D366] px-3 py-1 text-xs font-bold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
             Chat with Us
           </span>

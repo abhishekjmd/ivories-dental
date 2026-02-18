@@ -25,10 +25,14 @@ export default function RootCanalTreatmentPage() {
               ensure a safe, efficient, and comfortable experience.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <button className="flex items-center justify-center gap-3 rounded-xl bg-[#200b3c] px-8 py-4 text-base font-bold text-white transition-transform hover:scale-[1.02]">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="flex items-center justify-center gap-3 rounded-xl bg-[#200b3c] px-8 py-4 text-base font-bold text-white transition-transform hover:scale-[1.02]"
+              >
                 Book Your Consultation
                 <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
+              </a>
               <button className="flex items-center justify-center gap-3 rounded-xl border-2 border-[#200b3c]/10 bg-white px-8 py-4 text-base font-bold text-[#200b3c] transition-colors hover:bg-[#200b3c]/5">
                 <span className="material-symbols-outlined">play_circle</span>
                 How it works
@@ -367,12 +371,13 @@ export default function RootCanalTreatmentPage() {
                     rows={3}
                   />
                 </div>
-                <button
-                  className="mt-4 w-full rounded-xl bg-[#24B9D7] py-4 font-bold text-white shadow-lg shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90"
-                  type="submit"
+                <a
+                  href="https://wa.me/919825571401"
+                  target="_blank"
+                  className="mt-4 block w-full text-center rounded-xl bg-[#24B9D7] py-4 font-bold text-white shadow-lg shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90"
                 >
                   Send Message
-                </button>
+                </a>
               </form>
             </div>
           </div>

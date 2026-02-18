@@ -27,9 +27,13 @@ export default function SmileDesigningPage() {
               for a radiant, natural result.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <button className="rounded-xl bg-[#200b3c] px-8 py-4 text-base font-bold text-white transition-all hover:bg-[#0B1F3A]">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-xl bg-[#200b3c] px-8 py-4 text-center text-base font-bold text-white transition-all hover:bg-[#0B1F3A]"
+              >
                 Book Your Consultation
-              </button>
+              </a>
               <button className="flex items-center justify-center gap-2 px-8 py-4 font-bold text-[#0B1F3A] transition-colors hover:text-[#24B9D7]">
                 <span className="material-symbols-outlined">play_circle</span>
                 View Transformations
@@ -298,9 +302,13 @@ export default function SmileDesigningPage() {
               Schedule a personal consultation with our expert smile designers
               and take the first step toward a more confident you.
             </p>
-            <button className="relative z-10 rounded-xl bg-[#24B9D7] px-10 py-4 text-lg font-bold text-[#0B1F3A] shadow-xl shadow-[#24B9D7]/20 transition-transform hover:scale-105">
+            <a
+              href="https://wa.me/919825571401"
+              target="_blank"
+              className="relative z-10 block text-center rounded-xl bg-[#24B9D7] px-10 py-4 text-lg font-bold text-[#0B1F3A] shadow-xl shadow-[#24B9D7]/20 transition-transform hover:scale-105"
+            >
               Book Your Consultation Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

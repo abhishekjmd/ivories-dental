@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "Patient Stories | Testimonials - Ivories Dental Clinic",
+  description:
+    "Read real stories from our happy patients. See how Ivories Dental Clinic has transformed smiles and lives through painless, world-class dentistry in Ahmedabad.",
+};
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -78,12 +85,19 @@ export default function TestimonialsPage() {
             painless, world-class dentistry.
           </p>
           <div className="mt-20 flex flex-wrap justify-center gap-4">
-            <button className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-[#200b3c] transition-transform hover:scale-105">
+            <a
+              href="/gallery"
+              className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold text-[#200b3c] transition-transform hover:scale-105"
+            >
               View Our Results
-            </button>
-            <button className="rounded-lg border border-white/20 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-md transition-all hover:bg-white/20">
+            </a>
+            <a
+              href="https://wa.me/919825571401"
+              target="_blank"
+              className="rounded-lg border border-white/20 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-md transition-all hover:bg-white/20"
+            >
               Watch Patient Videos
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -145,9 +159,13 @@ export default function TestimonialsPage() {
                 star
               </span>
             </div>
-            <button className="border-b-2 border-[#200b3c]/20 pb-1 font-bold text-[#200b3c] transition-all hover:border-[#24B9D7]">
+            <a
+              href="https://wa.me/919825571401"
+              target="_blank"
+              className="border-b-2 border-[#200b3c]/20 pb-1 font-bold text-[#200b3c] transition-all hover:border-[#24B9D7]"
+            >
               Read All Google Reviews
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -277,9 +295,13 @@ export default function TestimonialsPage() {
             Join the thousands of happy patients who chose Ivories for
             world-class, painless dentistry. Book your consultation today.
           </p>
-          <button className="rounded-lg bg-[#24B9D7] px-12 py-6 text-lg font-black text-[#200b3c] shadow-xl transition-all hover:bg-white hover:shadow-[#24B9D7]/20">
+          <a
+            href="https://wa.me/919825571401"
+            target="_blank"
+            className="rounded-lg bg-[#24B9D7] px-12 py-6 text-lg font-black text-[#200b3c] shadow-xl transition-all hover:bg-white hover:shadow-[#24B9D7]/20 text-center"
+          >
             Book Your Consultation Now
-          </button>
+          </a>
         </div>
         <div className="pointer-events-none absolute -right-24 -bottom-24 size-64 rounded-full border border-white/5" />
       </section>

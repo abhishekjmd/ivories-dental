@@ -18,9 +18,13 @@ export default function DentalImplantPage() {
               and life-changing procedure.
             </p>
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
-              <button className="rounded-xl bg-[#24B9D7] px-8 py-4 text-lg font-bold text-white shadow-xl shadow-[#24B9D7]/30 transition-all hover:bg-[#24B9D7]/90">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-xl bg-[#24B9D7] px-8 py-4 text-lg font-bold text-white shadow-xl shadow-[#24B9D7]/30 transition-all hover:bg-[#24B9D7]/90 text-center"
+              >
                 Start Your Journey
-              </button>
+              </a>
               <button className="flex items-center justify-center gap-2 rounded-xl border-2 border-[#0B1F3A]/10 px-8 py-4 text-lg font-bold text-[#0B1F3A] transition-all hover:border-[#24B9D7]">
                 <span className="material-symbols-outlined">play_circle</span>
                 View Gallery
@@ -406,12 +410,13 @@ export default function DentalImplantPage() {
                       type="date"
                     />
                   </div>
-                  <button
-                    className="w-full rounded-xl bg-[#24B9D7] py-4 text-lg font-black text-white shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90"
-                    type="submit"
+                  <a
+                    href="https://wa.me/919825571401"
+                    target="_blank"
+                    className="w-full block text-center rounded-xl bg-[#24B9D7] py-4 text-lg font-black text-white shadow-xl shadow-[#24B9D7]/20 transition-all hover:bg-[#24B9D7]/90"
                   >
                     Book My Consultation
-                  </button>
+                  </a>
                 </form>
               </div>
             </div>

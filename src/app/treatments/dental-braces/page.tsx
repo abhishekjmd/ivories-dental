@@ -24,9 +24,13 @@ export default function TeethRemovalPage() {
               procedure is entirely pain-free.
             </p>
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
-              <button className="rounded-lg bg-[#24B9D7] px-8 py-4 text-lg font-bold text-[#0B1F3A] transition-all hover:bg-white">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-lg bg-[#24B9D7] px-8 py-4 text-center text-lg font-bold text-[#0B1F3A] transition-all hover:bg-white"
+              >
                 Book Your Consultation
-              </button>
+              </a>
               <button className="rounded-lg border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-md transition-all hover:bg-white/20">
                 View Our Technology
               </button>
@@ -326,9 +330,13 @@ export default function TeethRemovalPage() {
               book your orthodontic consultation and get a personalized treatment plan.
             </p>
             <div className="flex flex-col items-center gap-6">
-              <button className="rounded-lg bg-[#F7BB00] px-12 py-5 text-xl font-black text-[#0B1F3A] shadow-2xl transition-transform hover:scale-105">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-lg bg-[#F7BB00] px-12 py-5 text-xl font-black text-[#0B1F3A] shadow-2xl transition-transform hover:scale-105 text-center"
+              >
                 BOOK BRACES CONSULTATION
-              </button>
+              </a>
               <div className="flex items-center gap-4 text-white">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
                   <span className="material-symbols-outlined text-[#24B9D7]">

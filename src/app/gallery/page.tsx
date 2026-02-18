@@ -174,12 +174,16 @@ export default function GalleryPage() {
                                     <p className="mb-4 text-sm text-[#0B1F3A]/60">
                                         {c.description}
                                     </p>
-                                    <button className="flex items-center gap-2 text-sm font-bold text-[#0B1F3A] transition-colors hover:text-[#24B9D7]">
+                                    <a
+                                        href="https://wa.me/919825571401"
+                                        target="_blank"
+                                        className="flex items-center gap-2 text-sm font-bold text-[#0B1F3A] transition-colors hover:text-[#24B9D7]"
+                                    >
                                         Case Details{" "}
                                         <span className="material-symbols-outlined text-sm">
                                             arrow_forward
                                         </span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         ))}
@@ -259,12 +263,20 @@ export default function GalleryPage() {
                         assessment by our lead specialists.
                     </p>
                     <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                        <button className="rounded-xl bg-[#F7BB00] px-10 py-5 text-lg font-black text-[#0B1F3A] shadow-xl shadow-[#F7BB00]/20 transition-all hover:scale-105 active:scale-95">
+                        <a
+                            href="https://wa.me/919825571401"
+                            target="_blank"
+                            className="rounded-xl bg-[#F7BB00] px-10 py-5 text-lg font-black text-[#0B1F3A] shadow-xl shadow-[#F7BB00]/20 transition-all hover:scale-105 active:scale-95 text-center"
+                        >
                             Book My Appointment
-                        </button>
-                        <button className="rounded-xl border-2 border-[#0B1F3A] bg-white px-10 py-5 text-lg font-bold text-[#0B1F3A] transition-all hover:bg-[#0B1F3A] hover:text-white">
+                        </a>
+                        <a
+                            href="https://wa.me/919825571401"
+                            target="_blank"
+                            className="rounded-xl border-2 border-[#0B1F3A] bg-white px-10 py-5 text-lg font-bold text-[#0B1F3A] transition-all hover:bg-[#0B1F3A] hover:text-white text-center"
+                        >
                             Contact Support
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>

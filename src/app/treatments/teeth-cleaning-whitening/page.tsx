@@ -1,4 +1,12 @@
 import { Playfair_Display } from "next/font/google";
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Teeth Cleaning & Whitening | Professional Dental Hygiene",
+  description:
+    "Get a brighter, cleaner smile with our professional teeth whitening and cleaning services. Advanced hygiene treatments at Ivories Dental Clinic.",
+};
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -34,9 +42,13 @@ export default function TeethCleaningWhiteningPage() {
               hygienic, modern environment.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 mb-10">
-              <button className="rounded-lg bg-[#200b3c] px-8 py-4 text-lg font-bold text-white transition-all hover:shadow-xl">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="rounded-lg bg-[#200b3c] px-8 py-4 text-center text-lg font-bold text-white transition-all hover:shadow-xl"
+              >
                 Book Your Visit
-              </button>
+              </a>
               <button className="flex items-center gap-2 rounded-lg border-2 border-[#200b3c]/10 px-8 py-4 text-lg font-bold transition-all hover:border-[#24B9D7]">
                 <span className="material-symbols-outlined">play_circle</span>
                 See The Results
@@ -408,12 +420,13 @@ export default function TeethCleaningWhiteningPage() {
                     rows={4}
                   />
                 </div>
-                <button
-                  className="w-full rounded-lg bg-[#200b3c] py-5 text-lg font-bold text-white shadow-xl shadow-[#200b3c]/20 transition-all hover:bg-[#200b3c]/90"
-                  type="submit"
+                <a
+                  href="https://wa.me/919825571401"
+                  target="_blank"
+                  className="w-full block text-center rounded-lg bg-[#200b3c] py-5 text-lg font-bold text-white shadow-xl shadow-[#200b3c]/20 transition-all hover:bg-[#200b3c]/90"
                 >
                   Send Message
-                </button>
+                </a>
               </form>
             </div>
           </div>

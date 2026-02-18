@@ -24,9 +24,14 @@ export default function TeethRemovalPage() {
               procedure is entirely pain-free.
             </p>
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
-              <button className="rounded-lg bg-[#24B9D7] px-8 py-4 text-lg font-bold text-[#0B1F3A] transition-all hover:bg-white">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="flex items-center justify-center gap-3 rounded-xl bg-[#200b3c] px-8 py-4 text-base font-bold text-white transition-transform hover:scale-[1.02]"
+              >
                 Book Your Consultation
-              </button>
+                <span className="material-symbols-outlined">arrow_forward</span>
+              </a>
               <button className="rounded-lg border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-md transition-all hover:bg-white/20">
                 View Our Technology
               </button>
