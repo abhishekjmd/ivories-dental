@@ -311,8 +311,8 @@ export default function BookAppointmentPage() {
                                                             setFormData((prev) => ({ ...prev, time }))
                                                         }
                                                         className={`py-2 text-[10px] sm:text-xs font-bold border border-[#0B1F3A]/10 rounded-md transition-all ${formData.time === time
-                                                                ? "bg-[#C6A75E] text-white shadow-lg shadow-[#C6A75E]/20"
-                                                                : "hover:bg-[#0B1F3A] hover:text-white"
+                                                            ? "bg-[#C6A75E] text-white shadow-lg shadow-[#C6A75E]/20"
+                                                            : "hover:bg-[#0B1F3A] hover:text-white"
                                                             }`}
                                                     >
                                                         {time}
@@ -325,15 +325,16 @@ export default function BookAppointmentPage() {
 
                                 {/* Final Button */}
                                 <div className="pt-10 flex flex-col items-center">
-                                    <button
+                                    <a
+                                        href="https://wa.me/919825571401"
+                                        target="_blank"
                                         className="w-full md:w-auto min-w-[300px] bg-[#C6A75E] hover:bg-[#C6A75E]/90 text-white font-bold py-5 px-10 rounded-lg transition-all shadow-lg hover:shadow-[#C6A75E]/20 flex items-center justify-center gap-3 group"
-                                        type="submit"
                                     >
                                         <span>CONFIRM APPOINTMENT</span>
                                         <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                                             calendar_today
                                         </span>
-                                    </button>
+                                    </a>
                                     <p className="mt-4 text-[10px] text-[#0B1F3A]/40 uppercase tracking-widest">
                                         By clicking confirm, you agree to our booking terms and
                                         conditions.

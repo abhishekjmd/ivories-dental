@@ -91,9 +91,13 @@ export default function Footer() {
               placeholder="Phone Number"
               type="tel"
             />
-            <button className="w-full rounded-lg bg-[#24B9D7] py-3 text-sm font-bold tracking-widest text-[#200b3c] uppercase transition-all hover:bg-white">
+            <a
+              href="https://wa.me/919825571401"
+              target="_blank"
+              className="block w-full text-center rounded-lg bg-[#24B9D7] py-3 text-sm font-bold tracking-widest text-[#200b3c] uppercase transition-all hover:bg-white"
+            >
               Submit Request
-            </button>
+            </a>
           </form>
         </div>
       </div>

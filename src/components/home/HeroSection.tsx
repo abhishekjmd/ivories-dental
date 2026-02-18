@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="relative h-[600px] w-full overflow-hidden bg-[#200b3c]">
@@ -23,13 +25,20 @@ export default function HeroSection() {
             experts and state-of-the-art technology.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold tracking-tighter text-[#200b3c] uppercase transition-all hover:bg-white">
+            <Link
+              href="/gallery"
+              className="rounded-lg bg-[#24B9D7] px-8 py-4 font-bold tracking-tighter text-[#200b3c] uppercase transition-all hover:bg-white"
+            >
               View Our Work
-            </button>
-            <button className="flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 font-bold tracking-tighter text-white uppercase transition-all hover:bg-white/10">
+            </Link>
+            <a
+              href="https://wa.me/919825571401"
+              target="_blank"
+              className="flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 font-bold tracking-tighter text-white uppercase transition-all hover:bg-white/10"
+            >
               <span className="material-symbols-outlined">play_circle</span>
               Take a Tour
-            </button>
+            </a>
           </div>
         </div>
       </div>

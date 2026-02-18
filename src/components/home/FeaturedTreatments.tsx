@@ -11,7 +11,7 @@ const treatments = [
   },
   {
     title: "Dental Implants",
-    href: "#",
+    href: "/treatments/dental-implant",
     description:
       "Lifetime solutions for missing teeth using world-class implant systems from Switzerland.",
     image:
@@ -19,7 +19,7 @@ const treatments = [
   },
   {
     title: "Healthy Mouth Plan",
-    href: "#",
+    href: "https://wa.me/919825571401",
     description:
       "Comprehensive oral health assessment and maintenance for the entire family.",
     image:
@@ -37,7 +37,7 @@ const treatments = [
 
 export default function FeaturedTreatments() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section id="treatments" className="mx-auto max-w-7xl px-6 py-24">
       <div className="mb-16 flex flex-col items-end justify-between gap-6 md:flex-row">
         <div className="max-w-xl">
           <h2 className="mb-4 text-sm font-bold tracking-[0.3em] text-[#24B9D7] uppercase">
@@ -51,12 +51,12 @@ export default function FeaturedTreatments() {
             latest medical innovations and painless techniques.
           </p>
         </div>
-        <a
+        <Link
           className="border-b-2 border-[#24B9D7] pb-1 text-sm font-bold tracking-widest text-[#200b3c] uppercase transition-colors hover:text-[#24B9D7]"
-          href="#"
+          href="/#treatments"
         >
           View All Treatments
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

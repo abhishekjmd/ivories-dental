@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WelcomeSection() {
   return (
     <section className="relative overflow-hidden bg-white py-24">
@@ -53,12 +55,15 @@ export default function WelcomeSection() {
             </div>
           </div>
 
-          <button className="group flex items-center gap-3 rounded-lg bg-[#200b3c] px-8 py-4 font-bold tracking-tight text-white uppercase transition-all hover:bg-[#24B9D7]">
+          <Link
+            href="/about"
+            className="group flex items-center justify-center gap-3 rounded-lg bg-[#200b3c] px-8 py-4 font-bold tracking-tight text-white uppercase transition-all hover:bg-[#24B9D7]"
+          >
             Our Story
             <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
               arrow_forward
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

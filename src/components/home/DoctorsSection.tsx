@@ -149,9 +149,13 @@ const DoctorsSection = () => {
               <div className="bg-white/10 p-4 rounded-lg text-sm leading-relaxed mb-6 font-medium text-white/80">
                 "We believe that the best dentistry is preventive dentistry. Our goal is to empower patients with the knowledge and care needed to maintain natural smiles for a lifetime."
               </div>
-              <button className="flex items-center gap-2 bg-accent-gold text-primary font-black text-sm px-6 py-3 rounded-lg hover:scale-105 transition-transform">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="flex items-center justify-center gap-2 bg-accent-gold text-primary font-black text-sm px-6 py-3 rounded-lg hover:scale-105 transition-transform"
+              >
                 CONSULT DR. KINJAL <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

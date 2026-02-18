@@ -47,7 +47,7 @@ const infraGallery = [
 export default function AboutPage() {
   return (
     <main className="bg-[#f7f6f8] text-[#200b3c]">
-      <section className="bg-white px-6 py-16 lg:px-40">
+      <section id="treatments" className="bg-white px-6 py-16 lg:px-40">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#24B9D7]/10 px-4 py-1.5 text-xs font-black tracking-widest text-[#24B9D7] uppercase">
             <span className="material-symbols-outlined text-sm">verified</span>
@@ -243,10 +243,14 @@ export default function AboutPage() {
                 Our goal is to empower patients with the knowledge and care
                 needed to maintain natural smiles for a lifetime.&rdquo;
               </p>
-              <button className="flex items-center gap-2 rounded-lg bg-[#F7BB00] px-6 py-3 text-sm font-black text-[#200b3c] transition-transform hover:scale-105">
+              <a
+                href="https://wa.me/919825571401"
+                target="_blank"
+                className="flex items-center justify-center gap-2 rounded-lg bg-[#F7BB00] px-6 py-3 text-sm font-black text-[#200b3c] transition-transform hover:scale-105"
+              >
                 CONSULT DR. KINJAL
                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -295,11 +295,10 @@ export default function ContactPage() {
                           {timeSlots.map((time) => (
                             <button
                               key={time}
-                              className={`rounded-md border border-[#0B1F3A]/10 px-2 py-2 text-[11px] font-bold transition-all sm:text-xs ${
-                                formData.time === time
+                              className={`rounded-md border border-[#0B1F3A]/10 px-2 py-2 text-[11px] font-bold transition-all sm:text-xs ${formData.time === time
                                   ? "bg-[#C6A75E] text-white"
                                   : "bg-white hover:bg-[#0B1F3A] hover:text-white"
-                              }`}
+                                }`}
                               onClick={() => setFormData((prev) => ({ ...prev, time }))}
                               type="button"
                             >
@@ -312,15 +311,16 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex flex-col items-center pt-8">
-                    <button
+                    <a
+                      href="https://wa.me/919825571401"
+                      target="_blank"
                       className="group flex w-full items-center justify-center gap-3 rounded-lg bg-[#C6A75E] px-8 py-4 font-bold text-[#0B1F3A] shadow-lg transition-all hover:bg-[#C6A75E]/90 hover:shadow-[#C6A75E]/20 md:w-auto md:min-w-[320px]"
-                      type="submit"
                     >
                       <span>CONFIRM APPOINTMENT</span>
                       <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                         calendar_today
                       </span>
-                    </button>
+                    </a>
                     <p className="mt-4 text-center text-[10px] tracking-widest text-[#0B1F3A]/40 uppercase">
                       By clicking confirm, you agree to our booking terms and
                       conditions.

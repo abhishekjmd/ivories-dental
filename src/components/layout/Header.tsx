@@ -129,7 +129,8 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             <Link
-              href="/book-appointment"
+              href="https://wa.me/919825571401"
+              target="_blank"
               className="hidden rounded-lg bg-[#200b3c] px-6 py-3 text-sm font-bold tracking-tight text-white uppercase shadow-lg shadow-[#200b3c]/20 transition-all hover:bg-[#200b3c]/90 md:block"
             >
               Make an Appointment
